@@ -1,42 +1,44 @@
 {
-    "SEO": {
-        "TITLE": "Portfolio Maickol Rivera | Web Developer and Designer",
-        "DESCRIPTION": "Developer focused on creating unique and special applications"
-    },
+  "SEO": {
+    "TITLE": "Portfolio Maickol Rivera | Web Developer and Designer",
+    "DESCRIPTION": "Software Developer and UX/UI Designer, focused on transforming problems and ideas into innovative solutions, and connecting users with unique experiences."
+  },
 
-    "NAVIGATION": {
-        "HOME": "Home",
-        "PROJECTS": "Projects",
-        "ABOUT": "About Me",
-        "CONTACT": "Contact"
-    },
+  "NAVIGATION": {
+    "HOME": "Home",
+    "PROJECTS": "Projects",
+    "ABOUT": "About Me",
+    "CONTACT": "Contact"
+  },
 
-    "LANGUAJE": {
-        "TEXT": "ES",
-        "URL": "/es"
-    },
+  "LANGUAJE": {
+    "TEXT": "ES",
+    "URL": "/es"
+  },
 
-    "HERO": {
-        "WELCOME": "Welcome, I'm Maickol Rivera",
-        "SLOGAN": "Web Developer and UI/UX Designer. It's time to build something unique!"
-    },
+  "HERO": {
+    "WELCOME": "Welcome, I'm Maickol Rivera",
+    "SLOGAN": "Web Developer and UI/UX Designer. It's time to build something unique!"
+  },
 
-    "PROJECTS": {
-        "TITLE": "PROJECTS",
-        "PREVIEW_TEXT": "Preview",
+  "PROJECTS": {
+    "TITLE": "PROJECTS",
+    "PREVIEW_TEXT": "Preview",
 
-        "NEWFOCUS_TITLE": "New Focus",
-        "NEWFOCUS_DESCRIPTION": "Langing Page of New Focus. Application dedicated to promoting healthy and productive habits in the daily lives of its users."
-    },
+    "NEWFOCUS_TITLE": "NEW FOCUS",
+    "NEWFOCUS_DESCRIPTION": "Langing Page of New Focus. Application dedicated to promoting healthy and productive habits in the daily lives of its users.",
 
-    "ABOUT": {
-        "TITLE": "ABOUT ME",
-        "TEXT_1": "I'm a web developer specializing in the front-end world and creating 3D illustrations.",
-        "TEXT_2": "I started creating web pages for fun at the age of 15, never imagining it would become one of my greatest passions.",
-        "TEXT_3": "Additionally, I learned to develop applications with Flutter for a school project and also acquired skills in programming with C++ and Java."
-    },
+    "SOLARSISTEM_TITLE": "SOLAR SYSTEM",
+    "SOLARSISTEM_DESCRIPTION": "Interactive simulation of the solar system, developed with Three.js. It allows visualization of the planets rotating on their axes and orbiting around the Sun."
+  },
 
-    "FOOTER": {
-        "TITLE": "Maickol Rivera | Web Developer and Designer"
-    }
+  "ABOUT": {
+    "TITLE": "ABOUT ME",
+    "TEXT_1": "Software Developer and UX/UI Designer, focused on transforming problems and ideas into innovative solutions, and connecting users with unique experiences.",
+    "TEXT_2": "I began my journey in Web Development at the age of 15, accumulating experience in various projects, such as the design and development of websites, cross-platform mobile applications, and 3D design."
+  },
+
+  "FOOTER": {
+    "TITLE": "Maickol Rivera | Web Developer and Designer"
+  }
 }

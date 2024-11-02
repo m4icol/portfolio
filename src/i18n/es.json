@@ -1,42 +1,44 @@
 {
-    "SEO": {
-        "TITLE": "Portfolio Maickol Rivera | Desarrollador y Diseñador Web",
-        "DESCRIPTION": "Desarrollador enfocado en crear aplicaciones únicas y especiales"
-    },
+  "SEO": {
+    "TITLE": "Portfolio Maickol Rivera | Desarrollador y Diseñador Web",
+    "DESCRIPTION": "Desarrollador de Software y Diseñador UX/UI, enfocado en transformar problemas e ideas en soluciones innovadoras, y en conectar a los usuarios con experiencias únicas."
+  },
 
-    "NAVIGATION": {
-        "HOME": "Inicio",
-        "PROJECTS": "Proyectos",
-        "ABOUT": "Sobre mí",
-        "CONTACT": "Contacto"
-    },
+  "NAVIGATION": {
+    "HOME": "Inicio",
+    "PROJECTS": "Proyectos",
+    "ABOUT": "Sobre mí",
+    "CONTACT": "Contacto"
+  },
 
-    "LANGUAJE": {
-        "TEXT": "EN",
-        "URL": "/"
-    },
+  "LANGUAJE": {
+    "TEXT": "EN",
+    "URL": "/"
+  },
 
-    "HERO": {
-        "WELCOME": "Bienvenido, soy Maickol Rivera",
-        "SLOGAN": "Desarrollador Web y Diseñador UI/UX. Es momento de construir algo único!"
-    },
+  "HERO": {
+    "WELCOME": "Bienvenido, soy Maickol Rivera",
+    "SLOGAN": "Desarrollador Web y Diseñador UI/UX. Es momento de construir algo único!"
+  },
 
-    "PROJECTS": {
-        "TITLE": "PROYECTOS",
-        "PREVIEW_TEXT": "Visitar",
+  "PROJECTS": {
+    "TITLE": "PROYECTOS",
+    "PREVIEW_TEXT": "Visitar",
 
-        "NEWFOCUS_TITLE": "New Focus",
-        "NEWFOCUS_DESCRIPTION": "Langing Page de New Focus. Aplicación dedicada a promover hábitos saludables y productivos en la vida de los usuarios"
-    },
+    "NEWFOCUS_TITLE": "NEW FOCUS",
+    "NEWFOCUS_DESCRIPTION": "Langing Page de New Focus. Aplicación dedicada a promover hábitos saludables y productivos en la vida de los usuarios",
 
-    "ABOUT": {
-        "TITLE": "SOBRE MÍ",
-        "TEXT_1": "Soy un desarrollador especializado en el mundo del front-end y en la creación de ilustraciones 3D",
-        "TEXT_2": "Empecé creando páginas web por diversión cuando tenía 15 años y nunca imaginé que se convertiría en una de mis grandes pasiones",
-        "TEXT_3": "Además, aprendí a desarrollar aplicaciones con Flutter por un proyecto escolar y también adquirí habilidades en programación con C++ y Java"
-    },
+    "SOLARSISTEM_TITLE": "SISTEMA SOLAR",
+    "SOLARSISTEM_DESCRIPTION": "Simulación interactiva del sistema solar, desarrollado con Three.js. Permite visualizar los planetas girando sobre sus ejes y orbitando alrededor del Sol."
+  },
 
-    "FOOTER": {
-        "TITLE": "Maickol Rivera | Desarrollador y Diseñador Web"
-    }
+  "ABOUT": {
+    "TITLE": "SOBRE MÍ",
+    "TEXT_1": "Desarrollador de Software y Diseñador UX/UI, enfocado en transformar problemas e ideas en soluciones innovadoras, y en conectar a los usuarios con experiencias únicas.",
+    "TEXT_2": "Comencé mi trayectoria con el Desarrollo Web a los 15 años, acumulando experiencia en diversos proyectos, como el diseño y desarrollo de páginas web, aplicaciones móviles multiplataforma y diseño 3D."
+  },
+
+  "FOOTER": {
+    "TITLE": "Maickol Rivera | Desarrollador y Diseñador Web"
+  }
 }

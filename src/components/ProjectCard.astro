@@ -18,18 +18,18 @@ const cardItems = [
         urlGitHub: "https://github.com/m4icol/Website_NewFocus",
     },
     {
-        image: "/mockupNewFocus.webp",
-        title: i18n.PROJECTS.NEWFOCUS_TITLE,
-        description: i18n.PROJECTS.NEWFOCUS_DESCRIPTION,
-        urlWeb: "https://newfocus.netlify.app/",
-        urlGitHub: "https://github.com/m4icol/Website_NewFocus",
+        image: "/mockupSolarSystem.webp",
+        title: i18n.PROJECTS.SOLARSISTEM_TITLE,
+        description: i18n.PROJECTS.SOLARSISTEM_DESCRIPTION,
+        urlWeb: "https://sistemasolar-threejs.vercel.app/",
+        urlGitHub: "https://github.com/m4icol/sistema-solar",
     }
 ]
 ---
 
     {
         cardItems.map((item) => (
-        <div class="border-2 border-CS-Dark-Border w-3/4 md:w-80 rounded-xl overflow-hidden">
+        <div class="border-2 border-CS-Dark-Border w-3/4 md:w-[340px] rounded-xl overflow-hidden">
 
             <Image
                 class="w-full"
@@ -40,7 +40,7 @@ const cardItems = [
             />
 
             <div class="flex flex-col gap-5 py-6 px-6">
-                <h3 class="font-semibold text-2xl">{item.title}</h3>
+                <h3 class="font-semibold text-xl">{item.title}</h3>
                 <p class="text-sm">{item.description}</p>
 
                 <div class="flex flex-row gap-3">

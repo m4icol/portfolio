@@ -7,15 +7,16 @@ import { getI18N } from "../i18n";
 const { currentLocale = "es" } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
+<div id="projects"></div>
 
-<section id="projects" class="h-full w-screen flex flex-col gap-16 dark:text-CS-Dark-Font text-CS-Light-Font">
+<section class="w-screen flex flex-col gap-16 dark:text-CS-Dark-Font text-CS-Light-Font">
 
     <div class="flex flex-col gap-3 items-center">
         <h2 class="font-semibold text-4xl">{i18n.PROJECTS.TITLE}</h2>
         <DevIcon></DevIcon>
     </div>
 
-    <div class="flex flex-col items-center gap-10 justify-center md:flex-row">
+    <div class="w-full flex flex-col items-center gap-10 justify-center md:flex-row">
         <ProjectCard></ProjectCard>
     </div>
 </section>

@@ -9,21 +9,23 @@ const { currentLocale = "es" } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
-<footer class="w-screen flex flex-col md:flex-row gap-8 justify-between items-center md:px-32 py-10 dark:text-CS-Dark-Font text-CS-Light-Font dark:bg-CS-Dark-Header bg-CS-Light-Header">
-    <h3 class="text-sm">{i18n.FOOTER.TITLE}</h3>
+<footer class="dark:text-CS-Dark-Font text-CS-Light-Font dark:bg-CS-Dark-Header bg-CS-Light-Header">
 
-    <div class="flex flex-row gap-3">
+    <div class="max-w-[1080px] mx-auto flex flex-col md:flex-row gap-5 md:gap-20 justify-between items-center md:px-32 py-10">    
+        <h3 class="text-sm">{i18n.FOOTER.TITLE}</h3>
 
-        <LinkPill href="https://github.com/m4icol">
-            <Github></Github>
-            GitHub
-        </LinkPill>
-
-        <LinkPill href="https://www.linkedin.com/in/maickol-rivera/">
-            <LinkedIn></LinkedIn>
-            LinkedIn
-        </LinkPill>
-    </div>
+        <div class="flex flex-row gap-3">
+    
+            <LinkPill href="https://github.com/m4icol">
+                <Github></Github>
+                GitHub
+            </LinkPill>
+    
+            <LinkPill href="https://www.linkedin.com/in/maickol-rivera/">
+                <LinkedIn></LinkedIn>
+                LinkedIn
+            </LinkPill>
+        </div></div>
 
 </footer>
 
