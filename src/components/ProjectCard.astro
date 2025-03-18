@@ -10,12 +10,13 @@ const { currentLocale = "es" } = Astro;
 const i18n = getI18N({ currentLocale });
 
 const cardItems = [
+
     {
-        image: "/mockupNewFocus.webp",
-        title: i18n.PROJECTS.NEWFOCUS_TITLE,
-        description: i18n.PROJECTS.NEWFOCUS_DESCRIPTION,
-        urlWeb: "https://newfocus.netlify.app/",
-        urlGitHub: "https://github.com/m4icol/Website_NewFocus",
+        image: "/mockupRekrypt.webp",
+        title: i18n.PROJECTS.REKRYPT_TITLE,
+        description: i18n.PROJECTS.REKRYPT_DESCRIPTION,
+        urlWeb: "https://rekrypt.vercel.app/",
+        urlGitHub: "https://github.com/m4icol/rekrypt",
     },
     {
         image: "/mockupSolarSystem.webp",
@@ -23,7 +24,15 @@ const cardItems = [
         description: i18n.PROJECTS.SOLARSISTEM_DESCRIPTION,
         urlWeb: "https://sistemasolar-threejs.vercel.app/",
         urlGitHub: "https://github.com/m4icol/sistema-solar",
-    }
+    },
+    {
+        image: "/mockupNewFocus.webp",
+        title: i18n.PROJECTS.NEWFOCUS_TITLE,
+        description: i18n.PROJECTS.NEWFOCUS_DESCRIPTION,
+        urlWeb: "https://newfocus.netlify.app/",
+        urlGitHub: "https://github.com/m4icol/Website_NewFocus",
+    },
+    
 ]
 ---
 

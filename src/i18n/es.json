@@ -23,13 +23,19 @@
 
   "PROJECTS": {
     "TITLE": "PROYECTOS",
+    "DESCRIPTION": "Más de un año desarrollando software de manera independiente, explorando proyectos de todo tipo: desde landing pages, aplicaciones multiplataforma, interacciones 3D con Three.js y una herramienta de multi-encriptación. Siempre buscando formas de innovar y aprender.",
     "PREVIEW_TEXT": "Visitar",
 
     "NEWFOCUS_TITLE": "NEW FOCUS",
     "NEWFOCUS_DESCRIPTION": "Langing Page de New Focus. Aplicación dedicada a promover hábitos saludables y productivos en la vida de los usuarios",
 
     "SOLARSISTEM_TITLE": "SISTEMA SOLAR",
-    "SOLARSISTEM_DESCRIPTION": "Simulación interactiva del sistema solar, desarrollado con Three.js. Permite visualizar los planetas girando sobre sus ejes y orbitando alrededor del Sol."
+    "SOLARSISTEM_DESCRIPTION": "Simulación interactiva del sistema solar, desarrollado con Three.js. Permite visualizar los planetas girando sobre sus ejes y orbitando alrededor del Sol.",
+  
+    "REKRYPT_TITLE": "REKRYPT",
+    "REKRYPT_DESCRIPTION": "Herramienta que permite transformar textos mediante múltiples métodos de encriptación, codificación y hashing en secuencia."
+
+  
   },
 
   "ABOUT": {

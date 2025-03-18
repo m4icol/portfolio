@@ -23,13 +23,17 @@
 
   "PROJECTS": {
     "TITLE": "PROJECTS",
+    "DESCRIPTION": "Over a year developing software independently, exploring all kinds of projects—from landing pages and cross-platform applications to 3D interactions with Three.js and a multi-encryption tool. Always looking for ways to innovate and learn.",
     "PREVIEW_TEXT": "Preview",
 
     "NEWFOCUS_TITLE": "NEW FOCUS",
     "NEWFOCUS_DESCRIPTION": "Langing Page of New Focus. Application dedicated to promoting healthy and productive habits in the daily lives of its users.",
 
     "SOLARSISTEM_TITLE": "SOLAR SYSTEM",
-    "SOLARSISTEM_DESCRIPTION": "Interactive simulation of the solar system, developed with Three.js. It allows visualization of the planets rotating on their axes and orbiting around the Sun."
+    "SOLARSISTEM_DESCRIPTION": "Interactive simulation of the solar system, developed with Three.js. It allows visualization of the planets rotating on their axes and orbiting around the Sun.",
+
+    "REKRYPT_TITLE": "REKRYPT",
+    "REKRYPT_DESCRIPTION": "An online tool that allows you to transform text using multiple encryption, encoding, and hashing methods in sequence."
   },
 
   "ABOUT": {
