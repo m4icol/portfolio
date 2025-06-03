@@ -3,44 +3,62 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 
 interface Props {
-    title: string;
-    description: string;
+  title: string;
+  description: string;
 }
 
 const { title, description } = Astro.props;
 ---
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <meta name="description" content={description} />
-        <title>{title}</title>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
 
-    <body class="dark:bg-CS-Dark-Background bg-CS-Light-Background">
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Maickol Rivera, web developer, UI/UX designer, portfolio, frontend, software developer, diseño web, desarrollador" />
+    <meta name="author" content="Maickol Rivera" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://maickolrivera.vercel.app/" />
 
-        <slot />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maickolrivera.vercel.app/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://maickolrivera.vercel.app/portfolio-imagen.webp" />
 
-        <style is:global>
-            :root {
-                --color-background: var(--theme-CS-Background);
-                --color-text: var(--theme-CS-Text);
-            }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://maickolrivera.vercel.app/" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://maickolrivera.vercel.app/portfolio-imagen.webp" />
 
-            * {
-                font-family: "Poppins", sans-serif;
-                scroll-behavior: smooth;
-            }
-            body {
-                overflow-x: hidden;
-            }
+    <style is:global>
+      :root {
+        --color-background: var(--theme-CS-Background);
+        --color-text: var(--theme-CS-Text);
+      }
 
-            .text-sm {
-                line-height: 1.6;
-            }
-        </style>
-    </body>
+      * {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      .text-sm {
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+
+  <body class="dark:bg-CS-Dark-Background bg-CS-Light-Background">
+    <slot />
+  </body>
 </html>
