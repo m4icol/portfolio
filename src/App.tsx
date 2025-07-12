@@ -20,9 +20,9 @@ function App() {
     style={{
       backgroundColor: '#151617',
       background: `
-        linear-gradient(85deg, 
+        linear-gradient(87deg, 
           rgba(16, 14, 19, 0.2) 0%, 
-          rgba(150, 143, 174, 0.05) 50%, 
+          rgba(51, 49, 60, 0.18) 50%, 
           rgba(19, 18, 26, 0.2) 100%
         ),
         #151617

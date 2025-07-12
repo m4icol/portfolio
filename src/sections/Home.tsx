@@ -6,7 +6,7 @@ import StarBackground from "../components/StarBackground";
 export default function Home(){
 
     return(
-        <section className="w-screen h-screen flex items-center mt-40 flex-col gap-4">
+        <section className="w-screen h-screen flex items-center mt-45 flex-col gap-6">
             <StarBackground widthBackground={1000} heightBackground={400} starCount={70} topOffset={5} leftOffset={15} />
             
             <div className="flex flex'row items-center gap-7">
@@ -17,7 +17,7 @@ export default function Home(){
 
             <h1 className="font-[poppins] text-gradient text-4xl text-center">Desarrollando Software <br /> & Experiencias Unicas</h1>
             <p className="text-gradient text-center opacity-80 text-base/5">Estudiante universitario con 2 años de experiencia <br /> creando soluciones y productos de forma  independiente.</p>
-            <div className="flex gap-4 mt-1">
+            <div className="flex gap-6 mt-1">
                 <SocialButton text={"DESCARGAR CV"} href="public\CV - MAICKOL RIVERA.pdf" download></SocialButton>
                 <SocialButton text={"CONTACTA ME"} href="/#contact"></SocialButton>
             </div>

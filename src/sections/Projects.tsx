@@ -11,7 +11,7 @@ export default function Projects(){
     const [typeList, setTypeList] = useState<List>("SLIDER");
 
     return(
-        <section  className="w-screen min-h-screen flex items-center mt-30 flex-col gap-6">
+        <section  className="w-screen min-h-screen flex items-center mt-35 flex-col gap-6">
             <div className="flex flex-row items-center gap-3 ">
                 <ProjectsCode color="gray"/>
                 <h2 className="font-[poppins] text-gradient text-3xl text-center">PROJECTS</h2>
