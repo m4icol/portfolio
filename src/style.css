@@ -2,7 +2,7 @@
 
 @theme {
     --color-DARK-background: #151617;
-    --color-DARK-button: #1A1822;
+    --color-DARK-button: #131315;
     --color-DARK-text: #fff;
     --color-DARK-subtext: #AAAAAC;
     --color-DARK-selected: #18181C
@@ -51,6 +51,17 @@ html {
         background-position: center;
         background-repeat: no-repeat;
     }
+
+  .gradient-radial-project {
+      background: radial-gradient(circle, 
+      rgba(171, 156, 240, 0.3) 0%, 
+      rgba(171, 156, 240, 0) 60% 
+      );
+      background-size: 120% 120%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
   .text-gradient {
     background: linear-gradient(135deg, 
       #797979 0%, 
@@ -76,8 +87,6 @@ html {
 .flicker {
   animation: flicker 2s infinite ease-in-out;
 }
-
-
 
 @font-face {
     font-family: 'Nunito';

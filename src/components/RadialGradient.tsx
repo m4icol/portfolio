@@ -2,18 +2,18 @@ type RadialGradientProps = {
     size: string;
     top: string;
     left: string;
-    gradiant: string;
+    gradient: string;
   };
   
   export default function RadialGradient({
     size = "200",
     top = "0",
     left = "0",
-    gradiant = ""
+    gradient = "",
   }: RadialGradientProps) {
     return (
       <div
-        className={`fixed blur4xl z-0 ${gradiant}`}
+        className={` blur-4xl z-0 ${gradient}`}
         style={{
           width: `${size}px`,
           height: `${size}px`,

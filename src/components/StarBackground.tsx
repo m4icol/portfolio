@@ -65,7 +65,7 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
             width: `${star.size}px`,
             height: `${star.size}px`,
             animationDelay: `${star.animationDelay}s`,
-            animationDuration: '2s',
+            animationDuration: '3s',
             animationIterationCount: 'infinite',
           }}
         />

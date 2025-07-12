@@ -4,7 +4,7 @@ type IconProps = {
     className?: string;
   };
   
-  export default function Moon({ size = 30, color = "black", className = "" }: IconProps) {
+  export default function Moon({ size = 30, color = "white", className = "" }: IconProps) {
     return (
       <svg
         width={size}

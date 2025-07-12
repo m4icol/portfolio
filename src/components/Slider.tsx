@@ -1,0 +1,117 @@
+import { useEffect, useState } from "react";
+import Arrow from "../assets/icons/Arrow";
+import RadialGradient from "./RadialGradient";
+
+type Project = {
+  title: string;
+  description: string;
+  url: string;
+};
+
+type SliderProps = {
+  autoPlay?: boolean;
+  showButtons?: boolean;
+};
+
+const Projects: Project[] = [
+  {
+    title: "BIG SORT",
+    description:
+      "Herramienta interactiva para ver cómo funcionan los algoritmos de ordenamiento, en tiempo real y código en varios lenguajes de programación.",
+    url: "/bigsort.png",
+  },
+  {
+    title: "REKRYPT",
+    description:
+      "Explora cifrados clásicos y modernos, personaliza claves y visualiza el proceso de encriptación paso a paso.",
+    url: "/bigsort.png",
+  },
+  {
+    title: "SISTEMA SOLAR",
+    description:
+      "Simulación 3D interactiva de los planetas orbitando alrededor del Sol, desarrollada con Three.js y Astro.",
+    url: "/bigsort.png",
+  },
+];
+
+export default function Slider({ autoPlay = true}: SliderProps) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+
+  const selectNewSlide = (next = true) => {
+    if (Projects.length === 0) return;
+
+    setLoaded(false);
+    const maxIndex = Projects.length - 1;
+    const nextIndex = next
+      ? selectedIndex < maxIndex ? selectedIndex + 1 : 0
+      : selectedIndex > 0 ? selectedIndex - 1 : maxIndex;
+
+    setTimeout(() => {
+      setSelectedIndex(nextIndex);
+      setLoaded(true);
+    }, 300);
+  };
+
+  useEffect(() => {
+    if (autoPlay && Projects.length > 0) {
+      const interval = setInterval(() => {
+        selectNewSlide(true);
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  });
+
+  const current = Projects[selectedIndex];
+
+  return (
+    <div className="relative flex flex-col items-center">
+      <div className="relative w-[650px] h-[260px] bg-[#1a1a1a] overflow-hidden rounded-xl px-10 flex ">
+        <div className="z-10 w-full max-w-[44%] h-full flex flex-col justify-center gap-2">
+          <p className="text-lg font-semibold text-white">{current.title}</p>
+          <p className="text-sm/4.5 text-gray-400">{current.description}</p> 
+        </div>
+
+        <img
+          src={current.url}
+          alt={current.title}
+          className={`absolute z-10 right-[-160px] bottom-[-50px] w-[500px] object-cover rounded-lg transition-opacity duration-300 ${
+            loaded ? "opacity-100" : "opacity-0"
+          }`}
+          onLoad={() => setLoaded(true)}
+        />
+
+        <RadialGradient
+          size="700"
+          top="-20"
+          left="170"
+          gradient="gradient-radial-project absolute"
+        />
+
+        <RadialGradient
+          size="500"
+          top="-370"
+          left="-350"
+          gradient="gradient-radial-project absolute"
+        />
+      </div>
+
+        <div className="flex w-[750px] absolute bottom-30 justify-between items-center gap-4 mt-4">
+          <button
+            onClick={() => selectNewSlide(false)}
+            className="rotate-90 transition cursor-pointer"
+            aria-label="Previous slide"
+          >
+            <Arrow color="white" size="18" className="opacity-50 hover:opacity-100" />
+          </button>
+          <button
+            onClick={() => selectNewSlide(true)}
+            className="rotate-270 transition cursor-pointer"
+            aria-label="Next slide"
+          >
+            <Arrow color="white" size="18" className="opacity-50 hover:opacity-100" />
+          </button>
+        </div>
+    </div>
+  );
+}

@@ -5,6 +5,7 @@ import Moon from "./assets/icons/Moon";
 import Sun from "./assets/icons/Sun";
 import SwitchOption from "./components/SwitchOption";
 import { useState } from "react";
+import Projects from "./sections/Projects";
 
 function App() {
 
@@ -15,13 +16,13 @@ function App() {
 
   return (
     <div 
-    className="h-screen w-full font-[nunito] text-DARK-text flex justify-center flex-col"
+    className="w-screen font-[nunito] text-DARK-text flex justify-center flex-col"
     style={{
       backgroundColor: '#151617',
       background: `
-        linear-gradient(80deg, 
+        linear-gradient(85deg, 
           rgba(16, 14, 19, 0.2) 0%, 
-          rgba(170, 159, 207, 0.04) 50%, 
+          rgba(170, 159, 207, 0.1) 50%, 
           rgba(19, 18, 26, 0.2) 100%
         ),
         #151617
@@ -30,10 +31,13 @@ function App() {
     >
       <div className="w-full h-full z-10">
         <Header></Header>
+        <div id="home"></div>
         <Home></Home>
+        <div id="projects"></div>
+        <Projects></Projects>
       </div>
-      <RadialGradient size={"900"} top={"-400"} left={"100"} gradiant={"gradient-radial-1"}></RadialGradient>
-      <RadialGradient size={"900"} top={"-400"} left={"750"} gradiant={"gradient-radial-2"}></RadialGradient>
+      <RadialGradient size={"900"} top={"-400"} left={"100"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
+      <RadialGradient size={"900"} top={"-400"} left={"750"} gradient={"gradient-radial-2 fixed"}></RadialGradient>
 
       <div className="fixed z-10 flex gap-4 flex-row bottom-8 right-8">
         <SwitchOption
