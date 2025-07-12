@@ -57,7 +57,7 @@ export default function Slider({ autoPlay = true}: SliderProps) {
     if (autoPlay && Projects.length > 0) {
       const interval = setInterval(() => {
         selectNewSlide(true);
-      }, 3000);
+      }, 3500);
       return () => clearInterval(interval);
     }
   });
@@ -66,7 +66,7 @@ export default function Slider({ autoPlay = true}: SliderProps) {
 
   return (
     <div className="relative flex flex-col items-center">
-      <div className="relative w-[650px] h-[260px] bg-[#1a1a1a] overflow-hidden rounded-xl px-10 flex ">
+      <div className="relative w-[650px] h-[260px] bg-DARK-selected overflow-hidden rounded-xl px-10 flex ">
         <div className="z-10 w-full max-w-[44%] h-full flex flex-col justify-center gap-2">
           <p className="text-lg font-semibold text-white">{current.title}</p>
           <p className="text-sm/4.5 text-gray-400">{current.description}</p> 
@@ -84,7 +84,7 @@ export default function Slider({ autoPlay = true}: SliderProps) {
         <RadialGradient
           size="700"
           top="-20"
-          left="170"
+          left="250"
           gradient="gradient-radial-project absolute"
         />
 

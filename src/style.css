@@ -54,7 +54,7 @@ html {
 
   .gradient-radial-project {
       background: radial-gradient(circle, 
-      rgba(171, 156, 240, 0.3) 0%, 
+      rgba(171, 156, 240, 0.1) 0%, 
       rgba(171, 156, 240, 0) 60% 
       );
       background-size: 120% 120%;

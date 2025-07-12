@@ -22,7 +22,7 @@ function App() {
       background: `
         linear-gradient(85deg, 
           rgba(16, 14, 19, 0.2) 0%, 
-          rgba(170, 159, 207, 0.1) 50%, 
+          rgba(150, 143, 174, 0.05) 50%, 
           rgba(19, 18, 26, 0.2) 100%
         ),
         #151617
