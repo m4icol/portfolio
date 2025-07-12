@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+@theme {
+    --color-DARK-background: #151617;
+    --color-DARK-text: #fff;
+    --color-DARK-subtext: #AAAAAC;
+}
+
+html {
+    font-family: 'Poppins', "Nunito", system-ui, sans-serif;
+}
+
+@layer utilities {
+    .gradient-text {
+      background: linear-gradient(135deg, #100E13 0%, #FFFFFF 50%, #13121A 100%);
+    }
+    .gradient-menu {
+        background: linear-gradient(135deg, 
+        rgba(16, 14, 19, 0.2) 0%, 
+        rgba(170, 159, 207, 0.12) 50%, 
+        rgba(19, 18, 26, 0.2) 100%
+      );
+    }
+    .gradient-line {
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(90deg, 
+            rgba(16, 14, 19, 0.7) 0%, 
+            rgba(115, 116, 119, 0.7) 50%, 
+            rgba(19, 18, 26, 0.7) 100%
+        ) 1;
+    }
+
+    .gradient-radial-1 {
+        background: radial-gradient(circle, 
+          rgba(250, 155, 115, 0.025) 0%, 
+          rgba(255, 121, 121, 0) 60%
+        );
+        background-size: 120% 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+  .gradient-radial-2 {
+        background: radial-gradient(circle, 
+        rgba(171, 156, 240, 0.025) 0%, 
+        rgba(171, 156, 240, 0) 60% 
+        );
+        background-size: 120% 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
