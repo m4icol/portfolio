@@ -1,14 +1,17 @@
 import Arrow from "../assets/icons/Arrow";
 import Line from "../assets/icons/Line";
 import SocialButton from "../components/SocialButton";
+import StarBackground from "../components/StarBackground";
 
 export default function Home(){
 
     return(
         <div className="w-screen flex items-center mt-40 flex-col gap-4">
+            <StarBackground widthBackground={1000} heightBackground={400} starCount={70} topOffset={5} leftOffset={15} />
+            
             <div className="flex flex'row items-center gap-7">
                 <Line classList="mb-1"></Line>
-                <p className="text-sm text-gradient">MAICKOL RIVERA</p>
+                <p className="text-xs text-gradient">MAICKOL RIVERA</p>
                 <Line classList="mb-1 rotate-180"></Line>
             </div>
 

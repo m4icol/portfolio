@@ -64,6 +64,20 @@ html {
   }
 }
 
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.flicker {
+  animation: flicker 2s infinite ease-in-out;
+}
+
+
 
 @font-face {
     font-family: 'Nunito';

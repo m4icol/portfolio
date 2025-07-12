@@ -35,7 +35,6 @@ function App() {
       <RadialGradient size={"900"} top={"-400"} left={"100"} gradiant={"gradient-radial-1"}></RadialGradient>
       <RadialGradient size={"900"} top={"-400"} left={"750"} gradiant={"gradient-radial-2"}></RadialGradient>
 
-
       <div className="fixed z-10 flex gap-4 flex-row bottom-8 right-8">
         <SwitchOption
           selectedValue={theme}
