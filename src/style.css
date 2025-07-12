@@ -2,6 +2,7 @@
 
 @theme {
     --color-DARK-background: #151617;
+    --color-DARK-button: #1A1822;
     --color-DARK-text: #fff;
     --color-DARK-subtext: #AAAAAC;
 }
@@ -49,6 +50,17 @@ html {
         background-position: center;
         background-repeat: no-repeat;
     }
+  .text-gradient {
+    background: linear-gradient(135deg, 
+      #797979 0%, 
+      #FFFFFF 50%, 
+      #797979 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 

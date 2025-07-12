@@ -17,8 +17,11 @@ function App() {
         #151617
       `,
     }}
-    ><Header></Header>
-      <Home></Home>
+    >
+      <div className="w-full h-full z-10">
+        <Header></Header>
+        <Home></Home>
+      </div>
       <RadialGradient size={"900"} top={"-400"} left={"100"} gradiant={"gradient-radial-1"}></RadialGradient>
       <RadialGradient size={"900"} top={"-400"} left={"750"} gradiant={"gradient-radial-2"}></RadialGradient>
 
