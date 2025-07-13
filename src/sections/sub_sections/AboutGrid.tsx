@@ -7,11 +7,13 @@ export default function AboutGrid(){
         grid-cols-2 grid-rows-8
         md:grid-cols-4 md:grid-rows-4 
         ">
-                <SmallBox title="+3" className="
+                <SmallBox className="
                 col-start-1 row-start-6
                 md:row-start-1
-                ">
-                    <p className="text-DARK-subtext">Proyectos</p>
+                "
+                title="+5">
+                    <p className="text-DARK-subtext">
+                        Proyectos</p>
                 </SmallBox>
 
                 <BoxContainer className="
@@ -42,30 +44,35 @@ export default function AboutGrid(){
                 <SmallBox className="
                 row-start-6
                 md:col-start-4 md:row-start-1"
-                title="+4">
-                    <p className="text-DARK-subtext">Certificados</p>
+                title="+6">
+                    <p className="text-DARK-subtext">
+                        Certificados</p>
                 </SmallBox>
 
                 <SmallBox className="
                 row-start-7
                 md:col-start-4 md:row-start-2"
                 title="B1">
-                    <p className="text-DARK-subtext">Nivel de Ingles</p>
+                    <p className="text-DARK-subtext">
+                        Nivel de Ingles</p>
                 </SmallBox>
 
                 <SmallBox className="
                 row-start-7
                 md:col-start-4 md:row-start-3" 
                 title="2">
-                    <p className="w-27 text-DARK-subtext">Contribuciones</p>
+                    <p className="w-27 text-DARK-subtext">
+                        Contribuciones</p>
                 </SmallBox>
 
-                <a href="" className="relative overflow-hidden col-span-2 row-start-8
-                    md:col-start-4 md:row-start-4">
-                    <SmallBox className="
-                    " 
+                <a href="" className="relative overflow-hidden 
+                    col-span-2 row-start-8
+                    md:col-start-4 md:row-start-4 mr-3.5
+                    ">
+                    <SmallBox className=""
                     title="+">
-                        <p className="w-25 text-center text-sm text-gradient">VER MAS</p>
+                        <p className="text-center text-sm text-gradient">
+                            VER MAS</p>
                     </SmallBox>
 
                     <RadialGradient
