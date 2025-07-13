@@ -4,8 +4,8 @@ import StarBackground from "../components/StarBackground";
 
 export default function Contact(){
     return(
-        <section id="contact" className="flex flex-col justify-center items-center gap-5 pb-70">
-            <StarBackground widthBackground={1000} heightBackground={400} starCount={70} topOffset={5} />
+        <section id="contact" className="relative flex flex-col justify-center items-center gap-5 pb-70">
+            <StarBackground widthBackground={700} heightBackground={400} starCount={50} topOffset={-100} />
             
             <div className="flex flex-row items-center gap-5">
                 <Line classList="mb-0.5"></Line>
