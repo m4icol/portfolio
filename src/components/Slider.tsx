@@ -18,19 +18,19 @@ const Projects: Project[] = [
     title: "BIG SORT",
     description:
       "Herramienta interactiva para ver cómo funcionan los algoritmos de ordenamiento, en tiempo real y código en varios lenguajes de programación.",
-    url: "/bigsort.png",
+    url: "/bigsort.webp",
   },
   {
     title: "REKRYPT",
     description:
       "Explora cifrados clásicos y modernos, personaliza claves y visualiza el proceso de encriptación paso a paso.",
-    url: "/bigsort.png",
+    url: "/bigsort.webp",
   },
   {
     title: "SISTEMA SOLAR",
     description:
       "Simulación 3D interactiva de los planetas orbitando alrededor del Sol, desarrollada con Three.js y Astro.",
-    url: "/bigsort.png",
+    url: "/bigsort.webp",
   },
 ];
 
