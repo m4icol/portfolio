@@ -1,7 +1,7 @@
 type RadialGradientProps = {
     size: string;
-    top: string;
-    left: string;
+    top?: string;
+    left?: string;
     gradient: string;
   };
   

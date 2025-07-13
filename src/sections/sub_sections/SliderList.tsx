@@ -61,8 +61,8 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
 
   return (
     <div className="relative flex flex-col items-center">
-      <div className="relative w-[650px] h-[290px] border-1 border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-10 flex">
-        <div className="w-full max-w-[44%] h-full flex flex-col justify-center gap-2">
+      <div className="relative w-[350px] h-full md:w-[650px] md:h-[290px] border-1 border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-10 flex">
+        <div className="w-full md:max-w-[44%] h-full flex flex-col pt-60 pb-20 md:pb-0 md:pt-0 md:justify-center gap-2">
           <p className="text-lg font-semibold text-white">{current.title}</p>
           <p className="text-sm/4.5 text-gray-400">{current.description}</p> 
         </div>
@@ -70,7 +70,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
         <img
           src={current.url}
           alt={current.title}
-          className={`absolute right-[-160px] bottom-[-20px] w-[500px] object-cover rounded-lg transition-opacity duration-300 ${
+          className={`absolute right-3.5 top-4 w-80 md:right-[-160px] md:top-[35px] md:w-[500px] object-cover rounded-lg transition-opacity duration-300 ${
             loaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={() => setLoaded(true)}
@@ -104,20 +104,20 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
         />
       </div>
 
-        <div className="flex w-[750px] absolute bottom-30 justify-between items-center gap-4 mt-4">
+        <div className="flex w-full md:w-[750px] absolute bottom-75 md:bottom-34 justify-between items-center mt-4">
           <button
             onClick={() => selectNewSlide(false)}
             className="rotate-90 transition cursor-pointer"
             aria-label="Previous slide"
           >
-            <Arrow color="white" size="18" className="opacity-50 hover:opacity-100" />
+            <Arrow color="white" size="18" className="opacity-50 hidden md:block hover:opacity-100" />
           </button>
           <button
             onClick={() => selectNewSlide(true)}
             className="rotate-270 transition cursor-pointer"
             aria-label="Next slide"
           >
-            <Arrow color="white" size="18" className="opacity-50 hover:opacity-100" />
+            <Arrow color="white" size="18" className="opacity-50 hidden md:block hover:opacity-100" />
           </button>
         </div>
     </div>

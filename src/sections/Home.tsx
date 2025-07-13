@@ -15,8 +15,8 @@ export default function Home(){
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
-            <h1 className="font-[poppins] text-gradient text-4xl text-center">Desarrollando Software <br /> & Experiencias Unicas</h1>
-            <p className="text-gradient text-center opacity-80 text-base/5">Estudiante universitario con 2 años de experiencia <br /> creando soluciones y productos de forma  independiente.</p>
+            <h1 className="font-[poppins] text-gradient text-3xl md:text-4xl text-center w-[380px] md:w-[450px]">Desarrollando Software & Experiencias Unicas</h1>
+            <p className="text-gradient text-center opacity-80 text-base/5 w-[400px] md:w-[450px]">Estudiante universitario con 2 años de experiencia creando soluciones y productos de forma  independiente.</p>
             <div className="flex gap-6 mt-1">
                 <SocialButton text={"DESCARGAR CV"} href="public\CV - MAICKOL RIVERA.pdf" download></SocialButton>
                 <SocialButton text={"CONTACTA ME"} href="/#contact"></SocialButton>

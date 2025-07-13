@@ -94,13 +94,6 @@ html {
   
   @font-face {
     font-family: 'Nunito';
-    src: url('./assets/fonts/Nunito-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Nunito';
     src: url('./assets/fonts/Nunito-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
@@ -110,12 +103,5 @@ html {
     font-family: 'Poppins';
     src: url('./assets/fonts/Poppins-Medium.woff2') format('woff2');
     font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Poppins';
-    src: url('./assets/fonts/Poppins-SemiBold.woff2') format('woff2');
-    font-weight: 600;
     font-style: normal;
   }

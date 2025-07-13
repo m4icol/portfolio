@@ -3,45 +3,68 @@ import RadialGradient from "../../components/RadialGradient";
 
 export default function AboutGrid(){
     return(
-        <div className="relative w-[900px] grid grid-cols-4 grid-rows-4 gap-3 mt-8">
-                <SmallBox title="+3">
+        <div className="relative md:w-[900px] w-full grid mt-8 gap-3 
+        grid-cols-2 grid-rows-8
+        md:grid-cols-4 md:grid-rows-4 
+        ">
+                <SmallBox title="+3" className="
+                col-start-1 row-start-6
+                md:row-start-1
+                ">
                     <p className="text-DARK-subtext">Proyectos</p>
                 </SmallBox>
 
-                <BoxContainer className="row-span-3 col-start-1 row-start-2"
+                <BoxContainer className="
+                col-span-2 col-start-1 row-start-3
+                md:col-span-1 md:row-span-3  md:row-start-2"
                 title="FRONTEND">
                     <p></p>
                 </BoxContainer>
 
-                <MainBox className="col-span-2 row-span-2 col-start-2 row-start-1"/>
+                <MainBox className="
+                col-span-2 row-span-2 col-start-1 row-start-1
+                md:col-start-2"/>
                 
-                <BoxContainer className="row-span-2 col-start-2 row-start-3"
+                <BoxContainer className="
+                col-span-2 col-start-1 row-start-4
+                md:col-span-1 md:row-span-2 md:col-start-2 md:row-start-3"
                 title="BACKEND">
                     <p></p>
                 </BoxContainer>
 
-                <BoxContainer className="row-span-2 col-start-3 row-start-3"
+                <BoxContainer className="
+                col-span-2 col-start-1 row-start-5
+                md:col-span-1 md:row-span-2 md:col-start-3 md:row-start-3"
                 title="OTRAS SKILLS">
                     <p></p>
                 </BoxContainer>
 
-                <SmallBox className="col-start-4 row-start-1"
+                <SmallBox className="
+                row-start-6
+                md:col-start-4 md:row-start-1"
                 title="+4">
                     <p className="text-DARK-subtext">Certificados</p>
                 </SmallBox>
 
-                <SmallBox className="col-start-4 row-start-2"
+                <SmallBox className="
+                row-start-7
+                md:col-start-4 md:row-start-2"
                 title="B1">
                     <p className="text-DARK-subtext">Nivel de Ingles</p>
                 </SmallBox>
 
-                <SmallBox className="col-start-4 row-start-3" 
+                <SmallBox className="
+                row-start-7
+                md:col-start-4 md:row-start-3" 
                 title="2">
                     <p className="w-27 text-DARK-subtext">Contribuciones</p>
                 </SmallBox>
 
-                <a href="" className="relative overflow-hidden">
-                    <SmallBox className="col-start-4 row-start-4" title="+">
+                <a href="" className="relative overflow-hidden col-span-2 row-start-8
+                    md:col-start-4 md:row-start-4">
+                    <SmallBox className="
+                    " 
+                    title="+">
                         <p className="w-25 text-center text-sm text-gradient">VER MAS</p>
                     </SmallBox>
 
@@ -53,12 +76,10 @@ export default function AboutGrid(){
                     />
                 </a>
 
-                <div className="opacity-50 pointer-events-none">
+                <div className="opacity-50 top-[10%] md:top-[20%] md:right-[30%] absolute pointer-events-none">
                     <RadialGradient
                         size="400"
-                        top="50"
-                        left="250"
-                        gradient="gradient-radial-project absolute"
+                        gradient="gradient-radial-project "
                     />
                 </div>
             </div>

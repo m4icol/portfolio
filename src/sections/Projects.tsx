@@ -19,11 +19,11 @@ export default function Projects(){
                 <h2 className="font-[poppins] text-gradient text-3xl text-center">PROYECTOS</h2>
 
             </div>
-            <p className="text-gradient text-center opacity-80 text-base/5">
+            <p className="w-[330px] md:w-[700px] text-gradient text-center opacity-80 text-base/5">
                 Desarrollando productos como landing pages, apps multiplataforma, experiencias <br /> 3D interactivas, integraciones de encriptación y visualizacion de algoritmos. 
             </p>
 
-            <div className="flex flex-row justify-between w-[650px] mt-10">
+            <div className="flex gap-32 md:gap-5 md:flex-row justify-between md:w-[650px] mt-10">
                 <div className="flex flex-row items-center gap-5">
                     <SwitchOption
                         selectedValue={typeList}
@@ -34,7 +34,7 @@ export default function Projects(){
                         ]}
                         values={["SLIDER", "COLUMNS"]}
                     />
-                    <p className="text-sm font-semibold text-DARK-subtext">LISTA DE PROYECTOS</p>
+                    <p className="text-sm font-semibold text-DARK-subtext hidden md:block">LISTA DE PROYECTOS</p>
                 </div>
                 <button className="text-xs text-DARK-subtext cursor-pointer hover:text-DARK-text gradient-menu border-DARK-text/10 rounded-lg px-4 border-1">
                     VER TODOS +
