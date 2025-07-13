@@ -1,14 +1,14 @@
-export type ColumnsListProps = {
+export type ColumnsListIconProps = {
     size?: number;
     color?: string;
     className?: string;
   };
   
-  export default function ColumnsList({
+  export default function ColumnsListIcon({
     size = 24,
     color = "white",
     className = "",
-  }: ColumnsListProps) {
+  }: ColumnsListIconProps) {
     const barHeight = 2;
     const gap = 6;
   

@@ -43,7 +43,7 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
 
   return (
     <div
-      className="absolute left-1/2 -translate-x-1/2 pointer-events-none z-0 rounded-b-3xl overflow-hidden"
+      className="absolute left-1/2 -translate-x-1/2 pointer-events-none z-0 overflow-hidden"
       style={{
         top: `${topOffset}px`,
         width: `${widthBackground}px`,

@@ -1,10 +1,10 @@
-export type SliderListProps = {
+export type SliderListIconProps = {
     size?: number,
     color?: string,
     className?: string,
 }
 
-export default function SliderList({size, color = "white", className}: SliderListProps){
+export default function SliderListIcon({size, color = "white", className}: SliderListIconProps){
     return(
         <svg 
         width={size}

@@ -1,10 +1,11 @@
 import { useState } from "react";
 import ProjectsCode from "../assets/icons/ProjectsCode";
 import SwitchOption from "../components/SwitchOption";
-import SliderList from "../assets/icons/SliderList";
-import ColumnsList from "../assets/icons/ColumnsList";
-import Slider from "../components/Slider"
+import ColumnsListIcon from "../assets/icons/ColumnsListIcon";
+import SliderList from "../components/SliderList"
 import StarBackground from "../components/StarBackground";
+import SliderListIcon from "../assets/icons/SliderListIcon";
+import ColumnList from "../components/ColumnList";
 
 export default function Projects(){
 
@@ -28,8 +29,8 @@ export default function Projects(){
                         selectedValue={typeList}
                         setSelectedValue={setTypeList}
                         options={[
-                            <SliderList size={15}/>,
-                            <ColumnsList size={15}/>
+                            <SliderListIcon size={15}/>,
+                            <ColumnsListIcon size={15}/>
                         ]}
                         values={["SLIDER", "COLUMNS"]}
                     />
@@ -40,8 +41,8 @@ export default function Projects(){
                 </button>
             </div>
 
-            <Slider></Slider>
-            <StarBackground widthBackground={1000} heightBackground={400} starCount={70} topOffset={120} />
+            {typeList == "SLIDER" ? <SliderList/> : <ColumnList/>}
+            <StarBackground widthBackground={1000} heightBackground={400} starCount={50} topOffset={120} />
 
         </section>
     )

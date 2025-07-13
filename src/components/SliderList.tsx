@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
 import Arrow from "../assets/icons/Arrow";
 import RadialGradient from "./RadialGradient";
+import type { Project } from "../types";
 
-type Project = {
-  title: string;
-  description: string;
-  url: string;
-};
-
-type SliderProps = {
+type SliderListProps = {
   autoPlay?: boolean;
   showButtons?: boolean;
 };
@@ -34,7 +29,7 @@ const Projects: Project[] = [
   },
 ];
 
-export default function Slider({ autoPlay = true}: SliderProps) {
+export default function SliderList({ autoPlay = true}: SliderListProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
@@ -86,7 +81,7 @@ export default function Slider({ autoPlay = true}: SliderProps) {
             <div key={i} className="w-1/3 h-1 bg-DARK-subtext/30 rounded-full overflow-hidden">
               <div
                 className={`h-full rounded-full transition-all duration-500 4s ease-in-out ${
-                  selectedIndex >= i ? "bg-DARK-text" : "bg-transparent"
+                  selectedIndex >= i ? "bg-DARK-subtext" : "bg-transparent"
                 }`}
               ></div>
             </div>
