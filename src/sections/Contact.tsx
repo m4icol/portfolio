@@ -15,8 +15,8 @@ export default function Contact(){
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
-            <h2 className="font-[poppins] text-gradient text-5xl text-center">
-                HABLAME DE TU <br /> PROMIXO PROYECTO
+            <h2 className="font-[poppins] w-2/5 text-gradient text-5xl text-center">
+                HABLAME DE TU PROXIMO PROYECTO
             </h2>
             <div className="flex gap-6 mt-1">
                 <SocialButton text={"GIT HUB"} href="https://github.com/m4icol" target="_black"></SocialButton>

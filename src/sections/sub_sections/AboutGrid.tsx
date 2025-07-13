@@ -7,37 +7,38 @@ export default function AboutGrid(){
                 <SmallBox title="+3">
                     <p className="text-DARK-subtext">Proyectos</p>
                 </SmallBox>
-                <SmallBox className="col-start-1 row-start-2"
-                title="+4">
-                    <p className="text-DARK-subtext">Proyectos</p>
-                </SmallBox>
-                <SmallBox className="col-start-1 row-start-3"
-                title="2">
-                    <p className="text-DARK-subtext">Contribuciones</p>
-                </SmallBox>
-                <SmallBox className="col-start-1 row-start-4" title="B1">
-                    <p className="w-27 text-DARK-subtext">Nivel de Ingles</p>
-                </SmallBox>
 
-                <MainBox className="col-span-2 row-span-2 col-start-2 row-start-1"/>
-
-                <BoxContainer className="row-span-2 col-start-2 row-start-3"
+                <BoxContainer className="row-span-3 col-start-1 row-start-2"
                 title="FRONTEND">
                     <p></p>
                 </BoxContainer>
 
-                <BoxContainer className="row-span-2 col-start-3 row-start-3"
+                <MainBox className="col-span-2 row-span-2 col-start-2 row-start-1"/>
+                
+                <BoxContainer className="row-span-2 col-start-2 row-start-3"
                 title="BACKEND">
                     <p></p>
                 </BoxContainer>
 
-                <BoxContainer className="row-span-2 col-start-4 row-start-1 px-10"
-                title="STACK PRINCIPAL">
+                <BoxContainer className="row-span-2 col-start-3 row-start-3"
+                title="OTRAS SKILLS">
                     <p></p>
                 </BoxContainer>
-                <BoxContainer className="col-start-4 row-start-3" title="CLOUD">
-                    <p></p>
-                </BoxContainer>
+
+                <SmallBox className="col-start-4 row-start-1"
+                title="+4">
+                    <p className="text-DARK-subtext">Certificados</p>
+                </SmallBox>
+
+                <SmallBox className="col-start-4 row-start-2"
+                title="B1">
+                    <p className="text-DARK-subtext">Nivel de Ingles</p>
+                </SmallBox>
+
+                <SmallBox className="col-start-4 row-start-3" 
+                title="2">
+                    <p className="w-27 text-DARK-subtext">Contribuciones</p>
+                </SmallBox>
 
                 <a href="" className="relative overflow-hidden">
                     <SmallBox className="col-start-4 row-start-4" title="+">
