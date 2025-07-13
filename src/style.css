@@ -5,7 +5,7 @@
     --color-DARK-button: #131315;
     --color-DARK-text: #fff;
     --color-DARK-subtext: #AAAAAC;
-    --color-DARK-selected: #18181C
+    --color-DARK-selected: #15151A
 }
 
 html {
@@ -54,7 +54,7 @@ html {
 
   .gradient-radial-project {
       background: radial-gradient(circle, 
-      rgba(171, 156, 240, 0.05) 0%, 
+      rgba(171, 156, 240, 0.15) 0%, 
       rgba(171, 156, 240, 0) 60% 
       );
       background-size: 120% 120%;
