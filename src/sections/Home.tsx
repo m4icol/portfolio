@@ -6,7 +6,7 @@ import StarBackground from "../components/StarBackground";
 export default function Home(){
 
     return(
-        <section className="w-screen h-full flex items-center mt-50 flex-col gap-6 pb-120">
+        <section className="w-screen h-full flex items-center mt-50 flex-col gap-6 pb-50">
             <StarBackground widthBackground={1000} heightBackground={400} starCount={70} topOffset={5} />
             
             <div className="flex flex'row items-center gap-7">

@@ -2,10 +2,10 @@ import { useState } from "react";
 import ProjectsCode from "../assets/icons/ProjectsCode";
 import SwitchOption from "../components/SwitchOption";
 import ColumnsListIcon from "../assets/icons/ColumnsListIcon";
-import SliderList from "../components/SliderList"
 import StarBackground from "../components/StarBackground";
 import SliderListIcon from "../assets/icons/SliderListIcon";
-import ColumnList from "../components/ColumnList";
+import ColumnList from "./sub_sections/ColumnList";
+import SliderList from "./sub_sections/SliderList";
 
 export default function Projects(){
 
@@ -13,10 +13,10 @@ export default function Projects(){
     const [typeList, setTypeList] = useState<List>("SLIDER");
 
     return(
-        <section  className="w-screen relative flex items-center mt-35 flex-col gap-6 pb-120">
+        <section  className="w-screen relative flex items-center mt-35 flex-col gap-3 pb-50">
             <div className="flex flex-row items-center gap-5 ">
                 <ProjectsCode color="gray"/>
-                <h2 className="font-[poppins] text-gradient text-3xl text-center">PROJECTS</h2>
+                <h2 className="font-[poppins] text-gradient text-3xl text-center">PROYECTOS</h2>
 
             </div>
             <p className="text-gradient text-center opacity-80 text-base/5">

@@ -1,5 +1,5 @@
-import type { Project } from "../types";
-import RadialGradient from "./RadialGradient";
+import type { Project } from "../../types";
+import RadialGradient from "../../components/RadialGradient";
 
 const Projects: Project[] = [
     {

@@ -42,7 +42,7 @@ function App() {
       <RadialGradient size={"900"} top={"-400"} left={"100"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
       <RadialGradient size={"900"} top={"-400"} left={"750"} gradient={"gradient-radial-2 fixed"}></RadialGradient>
 
-      <div className="fixed z-10 flex gap-4 flex-row bottom-8 right-8">
+      <div className="fixed z-10 flex gap-4 flex-row opacity-60 hover:opacity-100 bottom-8 right-8">
         <SwitchOption
           selectedValue={theme}
           setSelectedValue={setTheme}

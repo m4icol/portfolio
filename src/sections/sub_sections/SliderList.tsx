@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Arrow from "../assets/icons/Arrow";
-import RadialGradient from "./RadialGradient";
-import type { Project } from "../types";
+import Arrow from "../../assets/icons/Arrow";
+import RadialGradient from "../../components/RadialGradient";
+import type { Project } from "../../types";
 
 type SliderListProps = {
   autoPlay?: boolean;
@@ -61,7 +61,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
 
   return (
     <div className="relative flex flex-col items-center">
-      <div className="relative w-[650px] h-[290px] border-1 border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-10 flex ">
+      <div className="relative w-[650px] h-[290px] border-1 border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-10 flex">
         <div className="w-full max-w-[44%] h-full flex flex-col justify-center gap-2">
           <p className="text-lg font-semibold text-white">{current.title}</p>
           <p className="text-sm/4.5 text-gray-400">{current.description}</p> 
