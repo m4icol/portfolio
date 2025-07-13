@@ -7,6 +7,7 @@ import SwitchOption from "./components/SwitchOption";
 import { useState } from "react";
 import Projects from "./sections/Projects";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         <Projects></Projects>
         <div id="about"></div>
         <About></About>
+        <Contact></Contact>
       </div>
       <RadialGradient size={"900"} top={"-400"} left={"100"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
       <RadialGradient size={"900"} top={"-400"} left={"750"} gradient={"gradient-radial-2 fixed"}></RadialGradient>

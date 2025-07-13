@@ -16,7 +16,7 @@ export default function SocialButton({
   return (
     <a
       href={href}
-      className="rounded-full items-center flex gap-3 flex-row border text-xs text-DARK-subtext hover:text-DARK-text border-DARK-text/20 py-2 px-4 bg-DARK-button/60"
+      className="rounded-full items-center flex gap-3 flex-row border text-xs text-DARK-subtext hover:text-DARK-text border-DARK-text/20 py-2 pl-4 pr-2.5 bg-DARK-button/60"
       target={target}
       rel="noopener noreferrer"
       {...(download ? { download } : {})}
