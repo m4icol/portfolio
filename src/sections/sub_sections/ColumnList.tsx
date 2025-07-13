@@ -28,9 +28,10 @@ const Projects: Project[] = [
         {Projects.map(({ title, description, url }, index) => (
           <div
             key={index}
-            className="relative w-[650px] h-[180px] border border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-10 flex"
+            className="relative w-[350px] md:w-[650px] h-full md:py-10 border border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-8 md:px-10 flex"
           >
-            <div className="z-10 w-full max-w-[44%] h-full flex flex-col justify-center gap-2">
+
+            <div className="z-10 w-full md:max-w-[44%] h-full flex flex-col pt-55 pb-8 md:pb-0 md:pt-0 justify-center gap-2">
               <p className="text-lg font-semibold text-white">{title}</p>
               <p className="text-sm/4.5 text-gray-400">{description}</p>
             </div>
@@ -38,7 +39,7 @@ const Projects: Project[] = [
             <img
               src={url}
               alt={title}
-              className="absolute right-[20px] bottom-[-20px] w-[320px] object-cover rounded-lg transition-opacity duration-300"
+              className="absolute right-3.5 top-3.5 w-80 md:right-[-160px] md:top-[35px] md:w-[320px] object-cover rounded-lg transition-opacity duration-300"
             />
 
             <RadialGradient

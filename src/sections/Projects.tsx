@@ -20,7 +20,7 @@ export default function Projects(){
 
             </div>
             <p className="w-[330px] md:w-[700px] text-gradient text-center opacity-80 text-base/5">
-                Desarrollando productos como landing pages, apps multiplataforma, experiencias <br /> 3D interactivas, integraciones de encriptación y visualizacion de algoritmos. 
+                Desarrollando productos como landing pages, apps multiplataforma, experiencias 3D interactivas, integraciones de encriptación y visualizacion de algoritmos. 
             </p>
 
             <div className="flex gap-32 md:gap-5 md:flex-row justify-between md:w-[650px] mt-10">
