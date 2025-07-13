@@ -57,7 +57,7 @@ export default function Slider({ autoPlay = true}: SliderProps) {
     if (autoPlay && Projects.length > 0) {
       const interval = setInterval(() => {
         selectNewSlide(true);
-      }, 3800);
+      }, 4000);
       return () => clearInterval(interval);
     }
   });
@@ -81,11 +81,18 @@ export default function Slider({ autoPlay = true}: SliderProps) {
           onLoad={() => setLoaded(true)}
         />
 
-        <div className="absolute h-1 w-55 gap-3 bottom-8 flex flex-row">
-          <div className="bg-DARK-subtext h-1 w-1/3 bottom-20 rounded-full"></div>
-          <div className="bg-DARK-subtext h-1 w-1/3 bottom-20 rounded-full"></div>
-          <div className="bg-DARK-subtext h-1 w-1/3 bottom-20 rounded-full"></div>
+        <div className="absolute h-1 w-55 bottom-8 flex flex-row gap-3">
+          {[0, 1, 2].map((i) => (
+            <div key={i} className="w-1/3 h-1 bg-DARK-subtext/30 rounded-full overflow-hidden">
+              <div
+                className={`h-full rounded-full transition-all duration-500 4s ease-in-out ${
+                  selectedIndex >= i ? "bg-DARK-text" : "bg-transparent"
+                }`}
+              ></div>
+            </div>
+          ))}
         </div>
+
 
         <RadialGradient
           size="700"
@@ -96,8 +103,8 @@ export default function Slider({ autoPlay = true}: SliderProps) {
 
         <RadialGradient
           size="500"
-          top="-370"
-          left="-350"
+          top="-350"
+          left="-260"
           gradient="gradient-radial-project absolute"
         />
       </div>
