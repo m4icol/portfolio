@@ -42,7 +42,7 @@ export default function AboutGrid(){
                     <p className="w-25 text-center text-sm text-gradient">VER MAS</p>
                 </SmallBox>
 
-                <div>
+                <div className="opacity-50">
                     <RadialGradient
                         size="400"
                         top="50"

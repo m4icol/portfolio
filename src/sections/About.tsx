@@ -1,4 +1,5 @@
 import AboutCode from "../assets/icons/AboutCode";
+import StarBackground from "../components/StarBackground";
 import AboutGrid from "./sub_sections/AboutGrid";
 
 export default function About(){
@@ -14,6 +15,9 @@ export default function About(){
             </p>
 
             <AboutGrid></AboutGrid>
+
+            <StarBackground widthBackground={1000} heightBackground={500} starCount={50} topOffset={120} />
+
         </section>
     )
 }
