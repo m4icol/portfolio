@@ -39,7 +39,7 @@ const Projects: Project[] = [
             <img
               src={url}
               alt={title}
-              className="absolute right-3.5 top-3.5 w-80 md:right-[-160px] md:top-[35px] md:w-[320px] object-cover rounded-lg transition-opacity duration-300"
+              className="absolute right-3.5 top-3.5 w-80 md:right-[20px] md:top-[22px] md:w-[320px] object-cover rounded-lg transition-opacity duration-300"
             />
 
             <RadialGradient
