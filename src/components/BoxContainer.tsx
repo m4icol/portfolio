@@ -29,7 +29,7 @@ export function MainBox({ className }: BoxContainerProps) {
       
       <div className="flex flex-col gap-1">
         <p className="font-[poppins] text-2xl/7 text-gradient">MAICKOL STEVEN <br /> RIVERA OSPINA</p>
-        <p className="text-xs text-DARK-subtext">Estudiante de Ingenieria de Software</p>
+        <p className="text-sm text-DARK-subtext">Estudiante de Ing de Software</p>
       </div>
     </div>
   );

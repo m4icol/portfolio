@@ -38,11 +38,21 @@ export default function AboutGrid(){
                 <BoxContainer className="col-start-4 row-start-3" title="CLOUD">
                     <p></p>
                 </BoxContainer>
-                <SmallBox className="col-start-4 row-start-4" title="+">
-                    <p className="w-25 text-center text-sm text-gradient">VER MAS</p>
-                </SmallBox>
 
-                <div className="opacity-50">
+                <a href="" className="relative overflow-hidden">
+                    <SmallBox className="col-start-4 row-start-4" title="+">
+                        <p className="w-25 text-center text-sm text-gradient">VER MAS</p>
+                    </SmallBox>
+
+                    <RadialGradient
+                        size="300"
+                        top="20"
+                        left="-40"
+                        gradient="gradient-radial-project absolute"
+                    />
+                </a>
+
+                <div className="opacity-50 pointer-events-none">
                     <RadialGradient
                         size="400"
                         top="50"
