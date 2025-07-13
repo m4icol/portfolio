@@ -25,12 +25,14 @@ export default function Header(){
 
     return(
         <header className="w-screen flex justify-center fixed top-0 left-0 z-50 bg-DARK-background py-3 gradient-line">
-            <ul className="flex justify-evenly items-center gap-12 gradient-menu pt-2 pb-1.5 px-10 border-1 border-DARK-text/10 rounded-lg">
+            <ul className="flex justify-evenly items-center gap-12 gradient-menu pt-1 pb-1 px-10 border-1 border-DARK-text/10 rounded-lg">
                 {
                      navItems.map((item) => (
-                        <a className="hover:text-DARK-text text-DARK-subtext text-xs" aria-label={item.label} href={item.url}>
-                            {item.title}
-                        </a>
+                        <li>
+                            <a className="hover:text-DARK-text text-DARK-subtext text-xs" aria-label={item.label} href={item.url}>
+                                {item.title}
+                            </a>
+                        </li>
                     ))
                 }
             </ul>
