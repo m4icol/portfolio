@@ -57,7 +57,7 @@ export default function Slider({ autoPlay = true}: SliderProps) {
     if (autoPlay && Projects.length > 0) {
       const interval = setInterval(() => {
         selectNewSlide(true);
-      }, 3500);
+      }, 3800);
       return () => clearInterval(interval);
     }
   });
@@ -66,7 +66,7 @@ export default function Slider({ autoPlay = true}: SliderProps) {
 
   return (
     <div className="relative flex flex-col items-center">
-      <div className="relative w-[650px] h-[260px] border-1 border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-10 flex ">
+      <div className="relative w-[650px] h-[290px] border-1 border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-10 flex ">
         <div className="z-10 w-full max-w-[44%] h-full flex flex-col justify-center gap-2">
           <p className="text-lg font-semibold text-white">{current.title}</p>
           <p className="text-sm/4.5 text-gray-400">{current.description}</p> 
@@ -75,11 +75,17 @@ export default function Slider({ autoPlay = true}: SliderProps) {
         <img
           src={current.url}
           alt={current.title}
-          className={`absolute z-10 right-[-160px] bottom-[-50px] w-[500px] object-cover rounded-lg transition-opacity duration-300 ${
+          className={`absolute right-[-160px] bottom-[-20px] w-[500px] object-cover rounded-lg transition-opacity duration-300 ${
             loaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={() => setLoaded(true)}
         />
+
+        <div className="absolute h-1 w-55 gap-3 bottom-8 flex flex-row">
+          <div className="bg-DARK-subtext h-1 w-1/3 bottom-20 rounded-full"></div>
+          <div className="bg-DARK-subtext h-1 w-1/3 bottom-20 rounded-full"></div>
+          <div className="bg-DARK-subtext h-1 w-1/3 bottom-20 rounded-full"></div>
+        </div>
 
         <RadialGradient
           size="700"

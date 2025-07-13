@@ -28,7 +28,7 @@ export default function Header(){
             <ul className="flex justify-evenly items-center gap-12 gradient-menu pt-2 pb-1.5 px-10 border-1 border-DARK-text/10 rounded-lg">
                 {
                      navItems.map((item) => (
-                        <a className="hover:text-DARK-text text-DARK-subtext text-sm" aria-label={item.label} href={item.url}>
+                        <a className="hover:text-DARK-text text-DARK-subtext text-xs" aria-label={item.label} href={item.url}>
                             {item.title}
                         </a>
                     ))

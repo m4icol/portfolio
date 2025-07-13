@@ -9,7 +9,7 @@ import Projects from "./sections/Projects";
 
 function App() {
 
-  type Theme = "moon" | "sun";
+  type Theme = "sun" | "moon";
   type Language = "ENG" | "SPN";
   const [theme, setTheme] = useState<Theme>("moon");
   const [language, setLanguage] = useState<Language>("SPN");
@@ -44,10 +44,10 @@ function App() {
           selectedValue={theme}
           setSelectedValue={setTheme}
           options={[
-            <Moon size={15} color="#FFF" key="moon" />,
             <Sun size={15} color="#FFF" key="sun" />,
+            <Moon size={15} color="#FFF" key="moon" />,
           ]}
-          values={["moon", "sun"]}
+          values={["sun", "moon"]}
         />
 
         <SwitchOption

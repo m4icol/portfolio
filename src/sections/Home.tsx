@@ -22,7 +22,9 @@ export default function Home(){
                 <SocialButton text={"CONTACTA ME"} href="/#contact"></SocialButton>
             </div>
 
-            <Arrow color="white" size="23" className="absolute bottom-12 opacity-50"></Arrow>
+            <a href="#projects">
+                <Arrow color="white" size="23" className="absolute bottom-30 opacity-50"/>
+            </a>
         </section>
     )
 }
