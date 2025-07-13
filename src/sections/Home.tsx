@@ -6,13 +6,13 @@ import StarBackground from "../components/StarBackground";
 export default function Home(){
 
     return(
-        <section className="w-screen h-full flex items-center mt-50 flex-col gap-6 pb-50">
+        <section className="relative w-screen h-full flex items-center mt-50 flex-col gap-6 pb-100">
             <StarBackground widthBackground={1000} heightBackground={400} starCount={70} topOffset={5} />
             
-            <div className="flex flex'row items-center gap-7">
-                <Line classList="mb-1"></Line>
+            <div className="flex flex-row items-center gap-5">
+                <Line classList="mb-0.5"></Line>
                 <p className="text-xs text-gradient">MAICKOL RIVERA</p>
-                <Line classList="mb-1 rotate-180"></Line>
+                <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
             <h1 className="font-[poppins] text-gradient text-4xl text-center">Desarrollando Software <br /> & Experiencias Unicas</h1>
@@ -22,8 +22,8 @@ export default function Home(){
                 <SocialButton text={"CONTACTA ME"} href="/#contact"></SocialButton>
             </div>
 
-            <a href="#projects">
-                <Arrow color="white" size="23" className="absolute bottom-30 opacity-50"/>
+            <a href="#projects" className="absolute bottom-40">
+                <Arrow color="white" size="23" className="opacity-50"/>
             </a>
         </section>
     )
