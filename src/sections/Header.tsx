@@ -14,7 +14,7 @@ export default function Header(){
         {
             title: "Sobre Mi",
             label: "About-me-navigation",
-            url: "/#about-me",
+            url: "/#about",
         },
         {
             title: "Contacto",
@@ -24,7 +24,7 @@ export default function Header(){
     ];
 
     return(
-        <header className="w-screen flex justify-center fixed top-0 left-0 z-10 bg-DARK-background py-3 gradient-line">
+        <header className="w-screen flex justify-center fixed top-0 left-0 z-50 bg-DARK-background py-3 gradient-line">
             <ul className="flex justify-evenly items-center gap-12 gradient-menu pt-2 pb-1.5 px-10 border-1 border-DARK-text/10 rounded-lg">
                 {
                      navItems.map((item) => (

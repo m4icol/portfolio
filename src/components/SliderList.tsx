@@ -62,7 +62,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
   return (
     <div className="relative flex flex-col items-center">
       <div className="relative w-[650px] h-[290px] border-1 border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-10 flex ">
-        <div className="z-10 w-full max-w-[44%] h-full flex flex-col justify-center gap-2">
+        <div className="w-full max-w-[44%] h-full flex flex-col justify-center gap-2">
           <p className="text-lg font-semibold text-white">{current.title}</p>
           <p className="text-sm/4.5 text-gray-400">{current.description}</p> 
         </div>
@@ -78,10 +78,10 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
 
         <div className="absolute h-1 w-55 bottom-8 flex flex-row gap-3">
           {[0, 1, 2].map((i) => (
-            <div key={i} className="w-1/3 h-1 bg-DARK-subtext/30 rounded-full overflow-hidden">
+            <div key={i} className="w-1/3 h-1 bg-DARK-text/30 rounded-full overflow-hidden">
               <div
                 className={`h-full rounded-full transition-all duration-500 4s ease-in-out ${
-                  selectedIndex >= i ? "bg-DARK-subtext" : "bg-transparent"
+                  selectedIndex >= i ? "bg-DARK-text/80" : "bg-transparent"
                 }`}
               ></div>
             </div>

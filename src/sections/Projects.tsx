@@ -13,8 +13,8 @@ export default function Projects(){
     const [typeList, setTypeList] = useState<List>("SLIDER");
 
     return(
-        <section  className="w-screen relative min-h-screen flex items-center mt-35 flex-col gap-6">
-            <div className="flex flex-row items-center gap-3 ">
+        <section  className="w-screen relative flex items-center mt-35 flex-col gap-6 pb-120">
+            <div className="flex flex-row items-center gap-5 ">
                 <ProjectsCode color="gray"/>
                 <h2 className="font-[poppins] text-gradient text-3xl text-center">PROJECTS</h2>
 
@@ -42,7 +42,7 @@ export default function Projects(){
             </div>
 
             {typeList == "SLIDER" ? <SliderList/> : <ColumnList/>}
-            <StarBackground widthBackground={1000} heightBackground={400} starCount={50} topOffset={120} />
+            <StarBackground widthBackground={1000} heightBackground={500} starCount={50} topOffset={120} />
 
         </section>
     )

@@ -10,7 +10,7 @@ type Star = {
 
 type StarBackgroundProps = {
   starCount?: number;
-  topOffset?: number; // only top is customizable
+  topOffset?: number;
   widthBackground?: number;
   heightBackground?: number;
 };
@@ -53,7 +53,7 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
       {stars.map((star) => (
         <div
           key={star.id}
-          className="absolute bg-white/50 rounded-full flicker"
+          className="absolute bg-white/70 rounded-full flicker"
           style={{
             top: `${star.top}%`,
             left: `${star.left}%`,
