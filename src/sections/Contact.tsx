@@ -4,18 +4,18 @@ import StarBackground from "../components/StarBackground";
 
 export default function Contact(){
     return(
-        <section id="contact" className="relative flex flex-col justify-center items-center gap-5 pb-70">
-            <StarBackground widthBackground={700} heightBackground={400} starCount={50} topOffset={-100} />
+        <section id="contact" className="relative flex flex-col justify-center items-center gap-5 pb-90">
+            <StarBackground widthBackground={60} heightBackground={50} starCount={50} topOffset={0} />
             
             <div className="flex flex-row items-center gap-5">
                 <Line classList="mb-0.5"></Line>
-                <p className="text-xs text-gradient">
+                <p className="text-xs text-gradient text-center">
                     Desarrollado con ❤️ por Maickol Rivera
                 </p>
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
-            <h2 className="font-[poppins] md:w-2/6 text-gradient text-5xl text-center">
+            <h2 className="max-w-[35rem] font-[poppins] md:w-2/6 text-gradient text-5xl text-center">
                 HABLAME DE TU PROXIMO PROYECTO
             </h2>
             <div className="flex gap-6 mt-1">

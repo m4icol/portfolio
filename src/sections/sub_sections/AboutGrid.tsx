@@ -3,7 +3,7 @@ import RadialGradient from "../../components/RadialGradient";
 
 export default function AboutGrid(){
     return(
-        <div className="relative md:w-[900px] w-full grid mt-8 gap-3 
+        <div className="relative md:w-[56rem] w-full grid mt-8 gap-3 
         grid-cols-2 grid-rows-8
         md:grid-cols-4 md:grid-rows-4 
         ">
@@ -83,7 +83,7 @@ export default function AboutGrid(){
                     />
                 </a>
 
-                <div className="opacity-50 top-[10%] md:top-[20%] md:right-[30%] absolute pointer-events-none">
+                <div className="opacity-50 right-0 top-[10%] md:top-[20%] md:right-[30%] absolute pointer-events-none">
                     <RadialGradient
                         size="400"
                         gradient="gradient-radial-project "
