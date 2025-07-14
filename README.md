@@ -1,4 +1,4 @@
-# MAICKOL RIVERA | WEB DEVELOPER & UX/UI DESIGNER
+# Maickol Rivera | Web developer & UX/UI Designer
 
 ![Portfolio preview](https://maickolrivera.vercel.app/portfolio.webp)
 
