@@ -16,7 +16,7 @@ export default function About(){
 
             <AboutGrid></AboutGrid>
 
-            <StarBackground widthBackground={1000} heightBackground={500} starCount={50} topOffset={120} />
+            <StarBackground widthBackground={60} heightBackground={50} starCount={50} topOffset={100} />
 
         </section>
     )

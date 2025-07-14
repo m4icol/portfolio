@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div 
-    className="w-screen font-[nunito] text-DARK-text flex justify-center flex-col"
+    className="w-full h-full font-[nunito] text-DARK-text flex justify-center flex-col"
     style={{
       backgroundColor: '#151617',
       background: `
@@ -38,9 +38,10 @@ function App() {
         <div id="projects"></div>
         <Projects></Projects>
         <div id="about"></div>
-        <About></About>
-        <Contact></Contact>
+         {/*<About></About>
+       <Contact></Contact>*/}
       </div>
+
       <RadialGradient size={"900"} top={"-400"} left={"0"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
       <RadialGradient size={"900"} top={"-400"} left={"700"} gradient={"gradient-radial-2 fixed"}></RadialGradient>
 

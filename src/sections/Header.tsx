@@ -24,8 +24,8 @@ export default function Header(){
     ];
 
     return(
-        <header className="w-screen flex justify-center fixed top-0 left-0 z-50 bg-DARK-background py-3 gradient-line">
-            <ul className="flex justify-evenly items-center gap-12 gradient-menu pt-1 pb-1 px-10 border-1 border-DARK-text/10 rounded-lg">
+        <header className="w-full flex justify-center fixed top-0 left-0 z-50 bg-DARK-background py-3 px-1  gradient-line">
+            <ul className="flex items-center gap-5 md:gap-12 gradient-menu pt-1 pb-1 px-5 md:px-10 border-1 border-DARK-text/10 rounded-lg">
                 {
                      navItems.map((item) => (
                         <li>

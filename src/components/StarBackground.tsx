@@ -46,8 +46,8 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
       className="absolute left-1/2 -translate-x-1/2 pointer-events-none z-0 overflow-hidden"
       style={{
         top: `${topOffset}px`,
-        width: `${widthBackground}px`,
-        height: `${heightBackground}px`,
+        width: `${widthBackground}%`,
+        height: `${heightBackground}%`,
       }}
     >
       {stars.map((star) => (

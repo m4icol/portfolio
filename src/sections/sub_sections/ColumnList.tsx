@@ -28,19 +28,19 @@ const Projects: Project[] = [
         {Projects.map(({ title, description, url }, index) => (
           <div
             key={index}
-            className="relative w-[350px] md:w-[650px] h-full md:py-10 border border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-8 md:px-10 flex"
+            className="relative flex-col max-w-[20rem] md:max-w-[41rem] gap-5 h-full md:py-10 border border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-2 py-2 md:px-10 flex"
           >
+            <img
+              src={url}
+              alt={title}
+              className="md:absolute right-0 top-1 w-80 md:right-[20px] md:top-[22px] md:w-[320px] object-contain rounded-3xl transition-opacity duration-300"
+            />
 
-            <div className="z-10 w-full md:max-w-[44%] h-full flex flex-col pt-55 pb-8 md:pb-0 md:pt-0 justify-center gap-2">
+            <div className="z-10 px-5 w-full md:max-w-[44%] h-full flex flex-col pb-5 md:pb-0 md:pt-0 justify-center gap-2">
               <p className="text-lg font-semibold text-white">{title}</p>
               <p className="text-sm/4.5 text-gray-400">{description}</p>
             </div>
   
-            <img
-              src={url}
-              alt={title}
-              className="absolute right-3.5 top-3.5 w-80 md:right-[20px] md:top-[22px] md:w-[320px] object-cover rounded-lg transition-opacity duration-300"
-            />
 
             <RadialGradient
                 size="700"

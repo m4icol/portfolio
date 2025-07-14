@@ -6,18 +6,25 @@ import StarBackground from "../components/StarBackground";
 export default function Home(){
 
     return(
-        <section className="relative w-screen h-full flex items-center mt-50 flex-col gap-6 pb-100">
-            <StarBackground widthBackground={1000} heightBackground={400} starCount={70} topOffset={5} />
+        <section className="px-5 relative w-screen h-full flex items-center mt-50 flex-col gap-6 pb-100">
+            <StarBackground widthBackground={60} heightBackground={50} starCount={50} topOffset={-40} />
             
             <div className="flex flex-row items-center gap-5">
                 <Line classList="mb-0.5"></Line>
-                <p className="text-xs text-gradient">MAICKOL RIVERA</p>
+                <p className="text-xs text-gradient w-full text-center block">MAICKOL RIVERA</p>
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
-            <h1 className="font-[poppins] text-gradient text-3xl md:text-4xl text-center w-[380px] md:w-[450px]">Desarrollando Software & Experiencias Unicas</h1>
-            <p className="text-gradient text-center opacity-80 text-base/5 w-[400px] md:w-[450px]">Estudiante universitario con 2 años de experiencia creando soluciones y productos de forma  independiente.</p>
-            <div className="flex gap-6 mt-1">
+            <div className="w-full flex flex-col gap-5 items-center">
+                <h1 className="font-[poppins] text-gradient text-3xl md:text-4xl text-center max-w-[28rem]">
+                    Desarrollando Software & Experiencias Unicas
+                </h1>
+                <p className="text-gradient text-center opacity-80 text-sm md:text-base/5 max-w-[28rem]">
+                    Estudiante universitario con 2 años de experiencia creando soluciones y productos de forma  independiente.
+                </p>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-2 md:gap-6 mt-1">
                 <SocialButton text={"DESCARGAR CV"} href="public\CV - MAICKOL RIVERA.pdf" download></SocialButton>
                 <SocialButton text={"CONTACTA ME"} href="/#contact"></SocialButton>
             </div>

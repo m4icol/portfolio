@@ -13,17 +13,18 @@ export default function Projects(){
     const [typeList, setTypeList] = useState<List>("SLIDER");
 
     return(
-        <section  className="w-screen relative flex items-center mt-35 flex-col gap-5 pb-100">
+        <section className="px-5 w-full relative flex items-center mt-35 flex-col gap-5 pb-90">
             <div className="flex flex-row items-center gap-5 ">
                 <ProjectsCode color="gray"/>
-                <h2 className="font-[poppins] text-gradient text-3xl text-center">PROYECTOS</h2>
-
+                <h2 className="font-[poppins] text-gradient text-3xl text-center max-w-[28rem]">
+                    PROYECTOS
+                </h2>
             </div>
-            <p className="w-[330px] md:w-[700px] text-gradient text-center opacity-80 text-base/5">
+            <p className="max-w-[28rem] text-sm text-gradient text-center opacity-80 md:text-base/5">
                 Desarrollando productos como landing pages, apps multiplataforma, experiencias 3D interactivas, integraciones de encriptación y visualizacion de algoritmos. 
             </p>
 
-            <div className="flex gap-32 md:gap-5 md:flex-row justify-between md:w-[650px] mt-10">
+            <div className="flex md:gap-5 md:flex-row justify-between w-full mt-10 max-w-[20rem] md:max-w-[41rem]">
                 <div className="flex flex-row items-center gap-5">
                     <SwitchOption
                         selectedValue={typeList}
@@ -42,7 +43,7 @@ export default function Projects(){
             </div>
 
             {typeList == "SLIDER" ? <SliderList/> : <ColumnList/>}
-            <StarBackground widthBackground={1000} heightBackground={500} starCount={50} topOffset={120} />
+            <StarBackground widthBackground={60} heightBackground={50} starCount={50} topOffset={120} />
 
         </section>
     )
