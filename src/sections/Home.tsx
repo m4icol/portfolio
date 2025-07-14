@@ -7,11 +7,11 @@ export default function Home(){
 
     return(
         <section className="px-5 relative w-screen h-full flex items-center mt-50 flex-col gap-6 pb-100">
-            <StarBackground widthBackground={60} heightBackground={50} starCount={50} topOffset={-40} />
+            <StarBackground widthBackground={50} heightBackground={50} starCount={40} topOffset={-100} />
             
             <div className="flex flex-row items-center gap-5">
                 <Line classList="mb-0.5"></Line>
-                <p className="text-xs text-gradient w-full text-center block">MAICKOL RIVERA</p>
+                <p className="text-xs text-gradient text-center block">MAICKOL RIVERA</p>
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
@@ -29,7 +29,7 @@ export default function Home(){
                 <SocialButton text={"CONTACTA ME"} href="/#contact"></SocialButton>
             </div>
 
-            <a href="#projects" className="absolute bottom-40" aria-label="projects section">
+            <a href="#projects" className="arrow absolute bottom-40" aria-label="projects section">
                 <Arrow color="white" size="23" className="opacity-50"/>
             </a>
         </section>
