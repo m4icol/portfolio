@@ -25,8 +25,8 @@ export default function Home(){
             </div>
 
             <div className="flex flex-col md:flex-row gap-2 md:gap-6 mt-1">
-                <SocialButton text={"DESCARGAR CV"} href="public\CV - MAICKOL RIVERA.pdf" download></SocialButton>
-                <SocialButton text={"CONTACTA ME"} href="/#contact"></SocialButton>
+                <SocialButton text={"DESCARGAR CV"} href="/CV_MAICKOL_RIVERA.pdf" download></SocialButton>
+                <SocialButton text={"CONTACTAME"} href="/#contact"></SocialButton>
             </div>
 
             <a href="#projects" className="arrow absolute bottom-40" aria-label="projects section">

@@ -1,10 +1,15 @@
 import Arrow from "../assets/icons/Arrow";
+import Github from "../assets/icons/GitHub";
+import Link from "../assets/icons/Link";
+
+type Options = "github" | "link" | "arrow"
 
 type SocialButtonProps = {
   text: string;
   href?: string;
   download?: boolean | string;
   target?: string;
+  Options?: Options
 };
 
 export default function SocialButton({
@@ -12,6 +17,7 @@ export default function SocialButton({
   href = "#",
   download,
   target = "",
+  Options = "arrow"
 }: SocialButtonProps) {
   return (
     <a
@@ -23,7 +29,18 @@ export default function SocialButton({
     >
       {text}
       <div className="h-5 w-5 pt-0.5 flex justify-center items-center bg-DARK-text rounded-full">
-        <Arrow />
+      {
+        Options === "arrow" ? (
+          <Arrow />
+        ) : Options === "github" ? (
+          <Github />
+        ) : Options === "link" ? (
+          <Link />
+        ) : null
+      }
+
+        
+        
       </div>
     </a>
   );
