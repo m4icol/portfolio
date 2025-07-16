@@ -23,7 +23,7 @@ const Projects: Project[] = [
     title: "REKRYPT",
     description:
       "Explora cifrados clásicos y modernos, personaliza claves y visualiza el proceso de encriptación paso a paso.",
-    img: "/bigsort.webp",
+    img: "/rekrypt.webp",
     repository: "https://github.com/m4icol/rekrypt",
     link: "https://rekrypt.vercel.app/"
   },
@@ -31,7 +31,7 @@ const Projects: Project[] = [
     title: "SISTEMA SOLAR",
     description:
       "Simulación 3D interactiva de los planetas orbitando alrededor del Sol, desarrollada con Three.js y Astro.",
-    img: "/bigsort.webp",
+    img: "/solarsystem.webp",
     repository: "https://github.com/m4icol/sistema-solar",
     link: "https://sistemasolar-threejs.vercel.app/"
   },
@@ -74,7 +74,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
         <img
           src={current.img}
           alt={current.title}
-          className={`md:absolute right-0 top-0 md:right-[-160px] md:top-[35px] md:w-[500px] object-contain rounded-3xl w-full transition-opacity duration-300 ${
+          className={`md:absolute right-0 top-0 md:right-[-180px] md:top-[35px] md:w-[530px] object-cover w-full transition-opacity duration-300 ${
             loaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={() => setLoaded(true)}
@@ -84,10 +84,10 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
           <p className="text-lg font-semibold text-white">{current.title}</p>
           <p className="text-sm/4.5 text-gray-400">{current.description}</p> 
           <div className="mt-2 md:my-2 flex flex-row z-20 gap-3 items-center">
-            <a href={current.repository} className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
+            <a href={current.repository} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
               <GitHub color="white" size={15}></GitHub>
             </a>
-            <a href={current.link} className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
+            <a href={current.link} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
               <Link color="white" size={15}></Link>
               <p className="text-xs text-DARK-subtext">Visitar</p>
             </a>
