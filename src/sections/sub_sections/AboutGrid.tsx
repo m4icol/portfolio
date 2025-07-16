@@ -3,7 +3,7 @@ import RadialGradient from "../../components/RadialGradient";
 
 export default function AboutGrid(){
     return(
-        <div className="relative md:w-[56rem] w-full grid mt-8 gap-3 
+        <div className="relative lg:w-[56rem] md:px-0 px-2 w-full grid mt-8 gap-3 
         grid-cols-2 grid-rows-8
         md:grid-cols-4 md:grid-rows-4 
         ">

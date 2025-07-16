@@ -4,7 +4,7 @@ import RadialGradient from "./components/RadialGradient";
 import Moon from "./assets/icons/Moon";
 import Sun from "./assets/icons/Sun";
 import SwitchOption from "./components/SwitchOption";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Projects from "./sections/Projects";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
@@ -15,6 +15,17 @@ function App() {
   type Language = "ENG" | "SPN";
   const [theme, setTheme] = useState<Theme>("moon");
   const [language, setLanguage] = useState<Language>("SPN");
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div 
@@ -45,13 +56,16 @@ function App() {
       <RadialGradient size={"900"} top={"-400"} left={"0"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
       <RadialGradient size={"900"} top={"-400"} left={"700"} gradient={"gradient-radial-2 fixed"}></RadialGradient>
 
-      <div className="fixed hidden z-10 md:flex gap-4 flex-row opacity-60 hover:opacity-100 bottom-8 right-8">
+
+      <div 
+        className={`language-mode-toggle z-10 flex gap-3 flex-row fixed bottom-5 right-5 transition-opacity duration-300 hover:opacity-100 ${isScrolled ? 'opacity-50' : 'opacity-100'}`}
+      >
         <SwitchOption
           selectedValue={theme}
           setSelectedValue={setTheme}
           options={[
-            <Sun size={15} color="#FFF" key="sun" />,
-            <Moon size={15} color="#FFF" key="moon" />,
+            <Sun size={14.5} color="#FFF" key="sun" />,
+            <Moon size={14.5} color="#FFF" key="moon" />,
           ]}
           values={["sun", "moon"]}
         />

@@ -85,6 +85,9 @@ html {
   animation: flicker 2s infinite ease-in-out;
 }
 
+.language-mode-toggle:hover {
+  opacity: 1 !important;
+}
 
 .arrow {
   display: block;
