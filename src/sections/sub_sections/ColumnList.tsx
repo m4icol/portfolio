@@ -33,7 +33,7 @@ const Projects: Project[] = [
   export default function ColumnList() {
     return (
       <div className="relative flex flex-col items-center gap-5">
-        {Projects.map(({ title, description, img }, index) => (
+        {Projects.map(({ title, description, img, repository, link }, index) => (
           <div
             key={index}
             className="relative flex-col max-w-[20rem] md:max-w-[41rem] gap-5 h-full md:py-10 border border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-2 py-2 md:px-8 flex"
@@ -49,10 +49,10 @@ const Projects: Project[] = [
               <p className="text-sm/4.5 text-gray-400">{description}</p>
               
               <div className="mt-2 flex flex-row z-20 gap-3 items-center">
-                <a href={img} className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
+                <a href={repository} className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
                   <GitHub color="white" size={15}></GitHub>
                 </a>
-                <a href={img} className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
+                <a href={link} className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
                   <Link color="white" size={15}></Link>
                   <p className="text-xs text-DARK-subtext">Visitar</p>
                 </a>
