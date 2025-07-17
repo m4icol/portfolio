@@ -74,7 +74,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
         <img
           src={current.img}
           alt={current.title}
-          className={`md:absolute right-0 top-0 md:right-[-180px] md:top-[35px] md:w-[530px] object-cover w-full transition-opacity duration-300 ${
+          className={`md:absolute right-0 top-0 md:right-[-180px] md:top-[35px] md:w-[530px] object-cover w-full transition-opacity duration-100 ${
             loaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={() => setLoaded(true)}
@@ -93,8 +93,6 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
             </a>
           </div>
         </div>
-
-
 
         <div className="absolute px-5 h-1 w-3/4 md:w-55 bottom-5 flex flex-row gap-3">
           {[0, 1, 2].map((i) => (
