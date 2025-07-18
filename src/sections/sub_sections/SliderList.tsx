@@ -100,7 +100,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
               bg-LIGHT-selected/60 border-LIGHT-text/10
               dark:bg-DARK-selected dark:border-DARK-text/10">
             
-              <Link className="text-LIGHT-text dark:border-DARK-background" size={15}></Link>
+              <Link className="text-LIGHT-text dark:text-DARK-text" size={15}></Link>
               <p className="text-xs text-LIGHT-text dark:text-DARK-subtext">Visitar</p>
 
             </a>
@@ -141,14 +141,14 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
             className="rotate-90 transition cursor-pointer"
             aria-label="Previous slide"
           >
-            <Arrow color="white" size="18" className="opacity-50 hidden md:block hover:opacity-100" />
+            <Arrow size="18" className="opacity-50 hidden md:block hover:opacity-100" />
           </button>
           <button
             onClick={() => selectNewSlide(true)}
             className="rotate-270 transition cursor-pointer"
             aria-label="Next slide"
           >
-            <Arrow color="white" size="18" className="opacity-50 hidden md:block hover:opacity-100" />
+            <Arrow size="18" className="opacity-50 hidden md:block hover:opacity-100" />
           </button>
         </div>
     </div>

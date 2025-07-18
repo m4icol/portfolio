@@ -81,8 +81,8 @@ function App() {
           selectedValue={theme}
           setSelectedValue={handleThemeChange}
           options={[
-            <Sun size={14.5} color="#FFF" key="light" />,
-            <Moon size={14.5} color="#FFF" key="dark" />,
+            <Sun size={14.5} key="light" />,
+            <Moon size={14.5} key="dark" />,
           ]}
           values={["light", "dark"]}
         />

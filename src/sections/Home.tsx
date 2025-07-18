@@ -30,7 +30,7 @@ export default function Home(){
             </div>
 
             <a href="#projects" className="arrow absolute bottom-40" aria-label="projects section">
-                <Arrow color="white" size="23" className="opacity-50"/>
+                <Arrow size="23" className="opacity-50"/>
             </a>
         </section>
     )

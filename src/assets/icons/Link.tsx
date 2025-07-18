@@ -3,7 +3,7 @@ type LinkProps ={
     className?: string;
 }
 
-export default function Link({size = 14, className = "pb-0.5"} : LinkProps){
+export default function Link({size = 12, className = "pb-0.5"} : LinkProps){
     return(
         <svg className={className}
         xmlns="http://www.w3.org/2000/svg" 
