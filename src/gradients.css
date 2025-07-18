@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .gradient-menu {
+        background: var(--gradient-menu);
+    }
+
+    .gradient-line {
+        border-bottom: 2px solid transparent;
+        border-image: var(--gradient-line) 1;
+    }
+
+    .gradient-radial-1 {
+        background: var(--gradient-radial-1);
+        background-size: 120% 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .gradient-radial-2 {
+        background: var(--gradient-radial-2);
+        background-size: 120% 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .gradient-radial-project {
+        background: var(--gradient-radial-project);
+        background-size: 120% 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .text-gradient {
+        background: var(--text-gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+
+    :root {
+        --gradient-menu: linear-gradient(135deg, 
+            rgba(170, 159, 207, 0.12) 0%, 
+            rgba(19, 18, 26, 0.08) 50%, 
+            rgba(170, 159, 207, 0.12) 100%
+        );
+        
+        --gradient-line: linear-gradient(90deg, 
+            rgba(115, 116, 119, 0.1) 0%, 
+            rgba(19, 18, 26, 0.2) 50%, 
+            rgba(115, 116, 119, 0.1) 100%
+        );
+
+        --gradient-radial-1: radial-gradient(circle, 
+            rgba(250, 155, 115, 0.025) 0%, 
+            rgba(255, 121, 121, 0) 60%
+        );
+
+        --gradient-radial-2: radial-gradient(circle, 
+            rgba(171, 156, 240, 0.025) 0%, 
+            rgba(171, 156, 240, 0) 60% 
+        );
+
+        --gradient-radial-project: radial-gradient(circle, 
+            rgba(171, 156, 240, 0.1) 0%, 
+            rgba(171, 156, 240, 0) 60% 
+        );
+
+        --text-gradient: linear-gradient(135deg, 
+            #444 0%, 
+            #888 50%, 
+            #444 100%
+        );
+    }
+
+    .dark {
+        --gradient-menu: linear-gradient(135deg, 
+            rgba(16, 14, 19, 0.2) 0%, 
+            rgba(170, 159, 207, 0.12) 50%, 
+            rgba(19, 18, 26, 0.2) 100%
+        );
+
+        --gradient-line: linear-gradient(90deg, 
+            rgba(16, 14, 19, 1) 0%, 
+            rgba(115, 116, 119, 1) 50%, 
+            rgba(19, 18, 26, 0.7) 100%
+        );
+
+        --gradient-radial-1: radial-gradient(circle, 
+            rgba(250, 155, 115, 0.025) 0%, 
+            rgba(255, 121, 121, 0) 60%
+        );
+
+        --gradient-radial-2: radial-gradient(circle, 
+            rgba(171, 156, 240, 0.025) 0%, 
+            rgba(171, 156, 240, 0) 60% 
+        );
+
+        --gradient-radial-project: radial-gradient(circle, 
+            rgba(171, 156, 240, 0.1) 0%, 
+            rgba(171, 156, 240, 0) 60% 
+        );
+
+        --text-gradient: linear-gradient(135deg, 
+            #797979 0%, 
+            #FFFFFF 50%, 
+            #797979 100%
+        );
+    }
+}

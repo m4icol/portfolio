@@ -12,7 +12,7 @@ export default function AboutGrid(){
                 md:row-start-1
                 "
                 title="+5">
-                    <p className="text-DARK-subtext">
+                    <p className="text-LIGHT-subtext dark:text-DARK-subtext">
                         Proyectos</p>
                 </SmallBox>
 
@@ -45,7 +45,7 @@ export default function AboutGrid(){
                 row-start-6
                 md:col-start-4 md:row-start-1"
                 title="+6">
-                    <p className="text-DARK-subtext">
+                    <p className="text-LIGHT-subtext dark:text-DARK-subtext">
                         Certificados</p>
                 </SmallBox>
 
@@ -53,7 +53,7 @@ export default function AboutGrid(){
                 row-start-7
                 md:col-start-4 md:row-start-2"
                 title="B1">
-                    <p className="text-DARK-subtext">
+                    <p className="text-LIGHT-subtext dark:text-DARK-subtext">
                         Nivel de Ingles</p>
                 </SmallBox>
 
@@ -61,7 +61,7 @@ export default function AboutGrid(){
                 row-start-7
                 md:col-start-4 md:row-start-3" 
                 title="2">
-                    <p className="w-27 text-DARK-subtext">
+                    <p className="w-27 text-LIGHT-subtext dark:text-DARK-subtext">
                         Contribuciones</p>
                 </SmallBox>
 

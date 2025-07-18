@@ -1,12 +1,10 @@
 export type ColumnsListIconProps = {
     size?: number;
-    color?: string;
     className?: string;
   };
   
   export default function ColumnsListIcon({
     size = 24,
-    color = "white",
     className = "",
   }: ColumnsListIconProps) {
     const barHeight = 2;
@@ -27,7 +25,7 @@ export type ColumnsListIconProps = {
             y={4 + i * (barHeight + gap)}
             width="20"
             height={barHeight}
-            fill={color}
+            fill="currentColor"
             rx="1"
           />
         ))}

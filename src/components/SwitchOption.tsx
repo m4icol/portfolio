@@ -31,7 +31,7 @@ type SwitchOptionProps<T> = {
               key={index}
               onClick={() => handleSelected(value)}
               className={`${
-                isSelected ? "bg-DARK-selected" : " opacity-35"
+                isSelected ? "bg-LIGHT-selected dark:bg-DARK-selected" : " opacity-35"
               } cursor-pointer px-3.5 py-2 rounded-md`}
             >
               {option}

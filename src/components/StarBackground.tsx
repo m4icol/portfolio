@@ -52,18 +52,18 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
     >
       {stars.map((star) => (
         <div
-          key={star.id}
-          className="absolute bg-white/70 rounded-full flicker"
-          style={{
-            top: `${star.top}%`,
-            left: `${star.left}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-            animationDelay: `${star.animationDelay}s`,
-            animationDuration: '3s',
-            animationIterationCount: 'infinite',
-          }}
-        />
+        key={star.id}
+        className="absolute star flicker"
+        style={{
+          top: `${star.top}%`,
+          left: `${star.left}%`,
+          width: `${star.size}px`,
+          height: `${star.size}px`,
+          animationDelay: `${star.animationDelay}s`,
+          animationDuration: '3s',
+          animationIterationCount: 'infinite',
+        }}
+      />
       ))}
     </div>
   );

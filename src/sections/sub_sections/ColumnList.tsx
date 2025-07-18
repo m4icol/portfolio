@@ -36,8 +36,10 @@ const Projects: Project[] = [
         {Projects.map(({ title, description, img, repository, link }, index) => (
           <div
             key={index}
-            className="relative flex-col max-w-[20rem] md:max-w-[41rem] gap-5 h-full md:py-10 border border-DARK-subtext/20 bg-DARK-selected overflow-hidden rounded-xl px-2 py-2 md:px-8 flex"
-          >
+            className="relative flex-col max-w-[20rem] md:max-w-[41rem] h-full md:h-[290px] border-1 overflow-hidden rounded-xl px-2 py-2 gap-5 md:px-8 flex
+            border-LIGHT-subtext/20 bg-LIGHT-selected/20
+            dark:border-DARK-subtext/20 dark:bg-DARK-selected">
+
             <img
               src={img}
               alt={title}
@@ -45,16 +47,23 @@ const Projects: Project[] = [
             />
 
             <div className="z-10 px-5 w-full md:max-w-[45%] h-full flex flex-col pb-5 md:pb-0 md:pt-3 justify-center gap-2">
-              <p className="text-lg font-semibold text-white">{title}</p>
-              <p className="text-sm/4.5 text-gray-400">{description}</p>
+              <p className="text-lg font-semibold text-LIGHT-text dark:text-DARK-text">{title}</p>
+              <p className="text-sm/4.5 text-LIGHT-subtext dark:text-DARK-subtext">{description}</p>
               
               <div className="mt-2 flex flex-row z-20 gap-3 items-center">
-                <a href={repository} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
-                  <GitHub color="white" size={15}></GitHub>
+                <a href={repository} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
+                  bg-LIGHT-selected/60 border-LIGHT-text/10
+                  dark:bg-DARK-selected dark:border-DARK-text/10">
+                
+                  <GitHub className="text-LIGHT-text dark:text-DARK-text" size={15}></GitHub>
                 </a>
-                <a href={link} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 bg-DARK-selected border-DARK-text/10 rounded-lg py-2 px-3.5">
-                  <Link color="white" size={15}></Link>
-                  <p className="text-xs text-DARK-subtext">Visitar</p>
+                <a href={link} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
+                  bg-LIGHT-selected/60 border-LIGHT-text/10
+                  dark:bg-DARK-selected dark:border-DARK-text/10">
+                
+                  <Link className="text-LIGHT-text dark:border-DARK-background" size={15}></Link>
+                  <p className="text-xs text-LIGHT-text dark:text-DARK-subtext">Visitar</p>
+
                 </a>
               </div>
             </div>

@@ -46,7 +46,9 @@ function App() {
 
   return (
     <div 
-    className="w-full h-full bg-DARK-background font-[nunito] text-DARK-text flex justify-center flex-col"
+    className="w-full h-full font-[nunito] flex justify-center flex-col
+    bg-LIGHT-background  text-LIGHT-text
+    dark:bg-DARK-background dark:text-DARK-text"
     style={{
       background: `
         linear-gradient(87deg, 

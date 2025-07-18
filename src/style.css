@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+html {
+    font-family: 'Poppins', "Nunito", system-ui, sans-serif;
+}
+
 @theme {
     --color-DARK-background: #151617;
     --color-DARK-button: #131315;
@@ -8,76 +12,11 @@
     --color-DARK-subtext: #AAAAAC;
     --color-DARK-selected: #15151A;
 
-    --color-LIGHT-background: #f9f9f9;
-    --color-LIGHT-button: #e6e6e6;
-    --color-LIGHT-text: #111111;
-    --color-LIGHT-subtext: #555555;
-    --color-LIGHT-selected: #dddddd;
-
-}
-
-html {
-    font-family: 'Poppins', "Nunito", system-ui, sans-serif;
-}
-
-@layer utilities {
-    .gradient-menu {
-        background: linear-gradient(135deg, 
-        rgba(16, 14, 19, 0.2) 0%, 
-        rgba(170, 159, 207, 0.12) 50%, 
-        rgba(19, 18, 26, 0.2) 100%
-      );
-    }
-    .gradient-line {
-        border-bottom: 2px solid transparent;
-        border-image: linear-gradient(90deg, 
-            rgba(16, 14, 19, 0.7) 0%, 
-            rgba(115, 116, 119, 0.7) 50%, 
-            rgba(19, 18, 26, 0.7) 100%
-        ) 1;
-    }
-
-    .gradient-radial-1 {
-        background: radial-gradient(circle, 
-          rgba(250, 155, 115, 0.025) 0%, 
-          rgba(255, 121, 121, 0) 60%
-        );
-        background-size: 120% 120%;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-  .gradient-radial-2 {
-        background: radial-gradient(circle, 
-        rgba(171, 156, 240, 0.025) 0%, 
-        rgba(171, 156, 240, 0) 60% 
-        );
-        background-size: 120% 120%;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-  .gradient-radial-project {
-      background: radial-gradient(circle, 
-      rgba(171, 156, 240, 0.1) 0%, 
-      rgba(171, 156, 240, 0) 60% 
-      );
-      background-size: 120% 120%;
-      background-position: center;
-      background-repeat: no-repeat;
-  }
-
-  .text-gradient {
-    background: linear-gradient(135deg, 
-      #797979 0%, 
-      #FFFFFF 50%, 
-      #797979 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
+    --color-LIGHT-background: #FEFCF3;
+    --color-LIGHT-button: #e9e9e9;
+    --color-LIGHT-text: #222;
+    --color-LIGHT-subtext: #777;
+    --color-LIGHT-selected: #bdbdbd;
 }
 
 @keyframes flicker {
@@ -89,12 +28,26 @@ html {
   }
 }
 
-.flicker {
-  animation: flicker 2s infinite ease-in-out;
+.star {
+  background: var(--star-color);
+  border-radius: 50%;
 }
 
-.language-mode-toggle:hover {
-  opacity: 1 !important;
+.flicker {
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 0.3; }
+}
+
+:root {
+  --star-color: rgba(0, 0, 0, 0.8);
+}
+
+.dark {
+  --star-color: rgba(255, 255, 255, 0.7);
 }
 
 .arrow {

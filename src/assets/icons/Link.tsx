@@ -1,10 +1,9 @@
 type LinkProps ={
     size?: number;
     className?: string;
-    color?: string;
 }
 
-export default function Link({size = 14, className = "pb-0.5", color = "black"} : LinkProps){
+export default function Link({size = 14, className = "pb-0.5"} : LinkProps){
     return(
         <svg className={className}
         xmlns="http://www.w3.org/2000/svg" 
@@ -12,7 +11,7 @@ export default function Link({size = 14, className = "pb-0.5", color = "black"} 
         height={size}
         viewBox="0 0 24 24" 
         fill="none" 
-        stroke={color} 
+        stroke="currentColor"
         stroke-width="3" 
         stroke-linecap="round" 
         stroke-linejoin="round">
