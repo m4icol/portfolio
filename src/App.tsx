@@ -21,7 +21,7 @@ function App() {
   };
 
   useEffect( ()=> {
-    const storageTheme = localStorage.getItem("theme") || "light";
+    const storageTheme = localStorage.getItem("theme") || "dark";
     setTheme(storageTheme as ThemeKey);
     document.documentElement.classList.toggle(
       "dark",
