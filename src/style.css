@@ -1,11 +1,19 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
     --color-DARK-background: #151617;
     --color-DARK-button: #131315;
     --color-DARK-text: #fff;
     --color-DARK-subtext: #AAAAAC;
-    --color-DARK-selected: #15151A
+    --color-DARK-selected: #15151A;
+
+    --color-LIGHT-background: #f9f9f9;
+    --color-LIGHT-button: #e6e6e6;
+    --color-LIGHT-text: #111111;
+    --color-LIGHT-subtext: #555555;
+    --color-LIGHT-selected: #dddddd;
+
 }
 
 html {

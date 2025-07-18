@@ -11,9 +11,26 @@ import Contact from "./sections/Contact";
 
 function App() {
 
-  type Theme = "sun" | "moon";
+  type ThemeKey = "light" | "dark";
+  const [theme, setTheme] = useState<ThemeKey>("dark");
+
+  const handleThemeChange = (newTheme: ThemeKey) => {
+    setTheme(newTheme);
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    localStorage.setItem("theme", newTheme);
+  };
+
+  useEffect( ()=> {
+    const storageTheme = localStorage.getItem("theme") || "light";
+    setTheme(storageTheme as ThemeKey);
+    document.documentElement.classList.toggle(
+      "dark",
+      storageTheme === "dark"
+    )
+  }, [])
+
+  
   type Language = "ENG" | "SPN";
-  const [theme, setTheme] = useState<Theme>("moon");
   const [language, setLanguage] = useState<Language>("SPN");
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,16 +46,14 @@ function App() {
 
   return (
     <div 
-    className="w-full h-full font-[nunito] text-DARK-text flex justify-center flex-col"
+    className="w-full h-full bg-DARK-background font-[nunito] text-DARK-text flex justify-center flex-col"
     style={{
-      backgroundColor: '#151617',
       background: `
         linear-gradient(87deg, 
           rgba(16, 14, 19, 0.2) 0%, 
           rgba(51, 49, 60, 0.18) 50%, 
           rgba(19, 18, 26, 0.2) 100%
         ),
-        #151617
       `,
     }}
     >
@@ -62,12 +77,12 @@ function App() {
       >
         <SwitchOption
           selectedValue={theme}
-          setSelectedValue={setTheme}
+          setSelectedValue={handleThemeChange}
           options={[
-            <Sun size={14.5} color="#FFF" key="sun" />,
-            <Moon size={14.5} color="#FFF" key="moon" />,
+            <Sun size={14.5} color="#FFF" key="light" />,
+            <Moon size={14.5} color="#FFF" key="dark" />,
           ]}
-          values={["sun", "moon"]}
+          values={["light", "dark"]}
         />
 
         <SwitchOption
