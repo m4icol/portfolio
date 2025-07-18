@@ -16,7 +16,7 @@ html {
     --color-LIGHT-button: #e9e9e9;
     --color-LIGHT-text: #222;
     --color-LIGHT-subtext: #777;
-    --color-LIGHT-selected: #bdbdbd;
+    --color-LIGHT-selected: #ccc;
 }
 
 @keyframes flicker {
@@ -43,7 +43,7 @@ html {
 }
 
 :root {
-  --star-color: rgba(0, 0, 0, 0.8);
+  --star-color: rgba(0, 0, 0, 1);
 }
 
 .dark {

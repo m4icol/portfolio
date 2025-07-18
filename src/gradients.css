@@ -53,17 +53,17 @@
         );
 
         --gradient-radial-1: radial-gradient(circle, 
-            rgba(250, 155, 115, 0.025) 0%, 
+            rgba(250, 155, 115, 0.09) 0%, 
             rgba(255, 121, 121, 0) 60%
         );
 
         --gradient-radial-2: radial-gradient(circle, 
-            rgba(171, 156, 240, 0.025) 0%, 
+            rgba(171, 156, 240, 0.15) 0%, 
             rgba(171, 156, 240, 0) 60% 
         );
 
         --gradient-radial-project: radial-gradient(circle, 
-            rgba(171, 156, 240, 0.1) 0%, 
+            rgba(171, 156, 240, 0.18) 0%, 
             rgba(171, 156, 240, 0) 60% 
         );
 
