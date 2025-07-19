@@ -1,9 +1,9 @@
 import { useState } from "react";
 import ProjectsCode from "../assets/icons/ProjectsCode";
 import SwitchOption from "../components/SwitchOption";
-import ColumnsListIcon from "../assets/icons/ColumnsListIcon";
+import ColumnsListIcon from "../assets/icons/switch_icons/ColumnsListIcon";
 import StarBackground from "../components/StarBackground";
-import SliderListIcon from "../assets/icons/SliderListIcon";
+import SliderListIcon from "../assets/icons/switch_icons/SliderListIcon";
 import ColumnList from "./sub_sections/ColumnList";
 import SliderList from "./sub_sections/SliderList";
 
