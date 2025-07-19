@@ -51,13 +51,13 @@ const Projects: Project[] = [
               <p className="text-sm/4.5 text-LIGHT-subtext dark:text-DARK-subtext">{description}</p>
               
               <div className="mt-2 flex flex-row z-20 gap-3 items-center">
-                <a href={repository} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
+                <a href={repository} aria-label="Look at the repository project" target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
                   bg-LIGHT-selected/60 border-LIGHT-text/10
                   dark:bg-DARK-selected dark:border-DARK-text/10">
                 
                   <GitHub className="text-LIGHT-text dark:text-DARK-text" size={15}></GitHub>
                 </a>
-                <a href={link} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
+                <a href={link} aria-label="Look at the project" target="_blank" className="opacity-90 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
                   bg-LIGHT-selected/60 border-LIGHT-text/10
                   dark:bg-DARK-selected dark:border-DARK-text/10">
                 

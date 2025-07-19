@@ -19,8 +19,8 @@ export default function Contact(){
                 HABLAME DE TU PROXIMO PROYECTO
             </h2>
             <div className="flex gap-6 mt-1">
-                <SocialButton text={"GITHUB"} href="https://github.com/m4icol" target="_black" Options="github"></SocialButton>
-                <SocialButton text={"LINKEDIN"} href="https://www.linkedin.com/in/maickol-rivera/" target="_black" Options="link"></SocialButton>
+                <SocialButton text={"GITHUB"} href="https://github.com/m4icol" target="_black" Options="github" label="Look at my GitHub profile"></SocialButton>
+                <SocialButton text={"LINKEDIN"} href="https://www.linkedin.com/in/maickol-rivera/" target="_black" Options="link" label="Look at my LinkedIn profile"></SocialButton>
             </div>
 
         </section>

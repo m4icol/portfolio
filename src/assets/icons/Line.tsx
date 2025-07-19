@@ -9,7 +9,7 @@ export default function Line({classList = ""}: LineProps){
             <defs>
             <linearGradient id="paint0_linear_365_700" x1="60" y1="4" x2="0" y2="4" gradientUnits="userSpaceOnUse">
             <stop stop-color="#9E9E9E"/>
-            <stop offset="1" stop-color="#383838"/>
+            <stop offset="1" stopColor="#383838"/>
             </linearGradient>
             </defs>
         </svg>

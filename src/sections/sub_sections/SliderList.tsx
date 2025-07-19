@@ -79,7 +79,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
               key={project.img}
               src={project.img}
               alt={project.title}
-              className={`md:absolute md:inset-0 object-cover w-full transition-opacity duration-100 ${
+              className={`absolute p-2 md:p-0 inset-0 object-cover w-full transition-opacity duration-100 ${
                 index === selectedIndex && loaded ? "opacity-100" : "opacity-0"
               }`}
               onLoad={() => {
@@ -89,21 +89,21 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
           ))}
         </div>
 
-        <div className="w-full px-5 md:max-w-[45%] h-full flex flex-col pb-11 md:pb-0 md:pt-0 md:justify-center gap-2">
+        <div className="w-full pt-41.5 md-pt-0 px-5 md:max-w-[45%] h-full flex flex-col pb-11 md:pb-0 md:pt-0 md:justify-center gap-2">
 
           <p className="text-lg font-semibold text-LIGHT-text dark:text-DARK-text">{current.title}</p>
           <p className="text-sm/4.5 text-LIGHT-subtext dark:text-DARK-subtext">{current.description}</p> 
 
           <div className="mt-2 md:my-2 flex flex-row z-20 gap-3 items-center">
 
-            <a href={current.repository} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
+            <a href={current.repository} aria-label="Look at the repository project" target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
               bg-LIGHT-selected/60 border-LIGHT-text/10
               dark:bg-DARK-selected dark:border-DARK-text/10">
             
               <GitHub className="text-LIGHT-text dark:text-DARK-text" size={15}></GitHub>
             </a>
 
-            <a href={current.link} target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
+            <a href={current.link} aria-label="Look at the project" target="_blank" className="opacity-90 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
               bg-LIGHT-selected/60 border-LIGHT-text/10
               dark:bg-DARK-selected dark:border-DARK-text/10">
             

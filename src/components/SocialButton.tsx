@@ -9,7 +9,8 @@ type SocialButtonProps = {
   href?: string;
   download?: boolean | string;
   target?: string;
-  Options?: Options
+  Options?: Options;
+  label?: string;
 };
 
 export default function SocialButton({
@@ -17,7 +18,8 @@ export default function SocialButton({
   href = "#",
   download,
   target = "",
-  Options = "arrow"
+  Options = "arrow",
+  label = "[read more...]"
 }: SocialButtonProps) {
   return (
     <a
@@ -27,6 +29,7 @@ export default function SocialButton({
        dark:text-DARK-subtext dark:hover:text-DARK-text dark:border-DARK-text/20 dark:bg-DARK-button/60"
       target={target}
       rel="noopener noreferrer"
+      aria-label={label}
       {...(download ? { download } : {})}
     >
       {text}
