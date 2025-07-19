@@ -1,7 +1,7 @@
 type SkillsPillProps = {
     icon?: React.ReactNode;
     text?: string;
-    span?: 1 | 2; // Nueva prop para controlar el span
+    span?: 1 | 2;
 }
 
 export default function SkillsPill ({icon, text, span = 1}: SkillsPillProps) {

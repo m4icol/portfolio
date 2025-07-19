@@ -75,7 +75,7 @@ function App() {
 
 
       <div 
-        className={`language-mode-toggle z-10 flex gap-3 flex-row fixed bottom-5 right-5 transition-opacity duration-300 hover:opacity-100 ${isScrolled ? 'opacity-50' : 'opacity-100'}`}
+        className={`z-10 flex gap-3 flex-row fixed bottom-5 right-5 transition-opacity duration-300 hover:opacity-100 ${isScrolled ? 'opacity-50' : 'opacity-100'}`}
       >
         <SwitchOption
           selectedValue={theme}

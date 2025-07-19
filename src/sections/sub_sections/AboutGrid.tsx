@@ -104,7 +104,7 @@ const OTHER_SKILLS = [
 
 export default function AboutGrid(){
     return(
-        <div className="relative lg:w-[62rem] md:px-0 px-2 w-full grid mt-8 gap-3 
+        <div className="relative max-w-[20rem] md:max-w-[62rem] md:px-0 px-2 w-full grid mt-8 gap-3 
             flex-row
             md:grid-cols-4 md:grid-rows-4 
         ">
