@@ -41,6 +41,15 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
+  useEffect(() => {
+    if (autoPlay && Projects.length > 0) {
+      const interval = setInterval(() => {
+        selectNewSlide(true);
+      }, 2800);
+      return () => clearInterval(interval);
+    }
+  });
+
   const selectNewSlide = (next = true) => {
     if (Projects.length === 0) return;
 
@@ -53,17 +62,8 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
     setTimeout(() => {
       setSelectedIndex(nextIndex);
       setLoaded(true);
-    }, 300);
+    }, 500);
   };
-
-  useEffect(() => {
-    if (autoPlay && Projects.length > 0) {
-      const interval = setInterval(() => {
-        selectNewSlide(true);
-      }, 4000);
-      return () => clearInterval(interval);
-    }
-  });
 
   const current = Projects[selectedIndex];
 
@@ -73,14 +73,21 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
       border-LIGHT-subtext/20 bg-LIGHT-selected/20
       dark:border-DARK-subtext/20 dark:bg-DARK-selected">
         
-        <img
-          src={current.img}
-          alt={current.title}
-          className={`md:absolute right-0 top-0 md:right-[-180px] md:top-[35px] md:w-[530px] object-cover w-full transition-opacity duration-100 ${
-            loaded ? "opacity-100" : "opacity-0"
-          }`}
-          onLoad={() => setLoaded(true)}
-        />
+        <div className="md:absolute right-0 top-0 md:right-[-180px] md:top-[35px] md:w-[530px] w-full">
+          {Projects.map((project, index) => (
+            <img
+              key={project.img}
+              src={project.img}
+              alt={project.title}
+              className={`md:absolute md:inset-0 object-cover w-full transition-opacity duration-100 ${
+                index === selectedIndex && loaded ? "opacity-100" : "opacity-0"
+              }`}
+              onLoad={() => {
+                if (index === selectedIndex) setLoaded(true);
+              }}
+            />
+          ))}
+        </div>
 
         <div className="w-full px-5 md:max-w-[45%] h-full flex flex-col pb-11 md:pb-0 md:pt-0 md:justify-center gap-2">
 
