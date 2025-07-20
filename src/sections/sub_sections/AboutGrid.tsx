@@ -124,7 +124,7 @@ export default function AboutGrid(){
                 md:col-span-1 md:row-span-3  md:row-start-2"
                 title="FRONTEND">
 
-                    <div className="grid grid-cols-2 px-5 gap-2">
+                    <div className="grid grid-cols-2 gap-1">
                         {FRONTEND.map((skill, index) => (
                             <SkillsPill 
                                 key={index} 
@@ -145,7 +145,7 @@ export default function AboutGrid(){
                 col-span-2 col-start-1 row-start-4
                 md:col-span-1 md:row-span-2 md:col-start-2 md:row-start-3"
                 title="BACKEND">
-                    <div className="grid grid-cols-2 px-5 gap-2">
+                    <div className="grid grid-cols-2 gap-1">
                         {BACKEND.map((skill, index) => (
                             <SkillsPill 
                                 key={index} 
@@ -161,7 +161,7 @@ export default function AboutGrid(){
                 col-span-2 col-start-1 row-start-5
                 md:col-span-1 md:row-span-2 md:col-start-3 md:row-start-3"
                 title="OTRAS SKILLS">
-                     <div className="grid grid-cols-2 px-5 gap-2">
+                     <div className="grid grid-cols-2 gap-1">
                         {OTHER_SKILLS.map((skill, index) => (
                             <SkillsPill 
                                 key={index} 
