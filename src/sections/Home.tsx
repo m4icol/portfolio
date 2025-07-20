@@ -2,6 +2,7 @@ import Arrow from "../assets/icons/Arrow";
 import Line from "../assets/icons/Line";
 import SocialButton from "../components/SocialButton";
 import StarBackground from "../components/StarBackground";
+import Typewriter from 'typewriter-effect';
 
 export default function Home(){
 
@@ -11,16 +12,25 @@ export default function Home(){
             
             <div className="flex flex-row items-center gap-5">
                 <Line classList="mb-0.5"></Line>
-                <p className="text-xs text-gradient text-center block">MAICKOL RIVERA</p>
+                <p className="text-sm text-gradient text-center block">BIENVENIDO SOY</p>
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
-            <div className="w-full flex flex-col gap-5 items-center">
-                <h1 className="font-[poppins] text-gradient text-3xl md:text-4xl text-center max-w-[28rem]">
-                    Desarrollando Software & Experiencias Unicas
+            <div className="w-full flex flex-col gap-7 items-center">
+                <h1 className="font-[poppins] text-gradient text-3xl inline-block md:text-5xl/13 text-center">
+                    Maickol Rivera <br />
+                    <span className="inline-block">
+                        <Typewriter
+                        options={{
+                        strings: ['Desarrollador Web', 'Diseñador UI/UX', 'Desarrollador de Software', ''],
+                        autoStart: true,
+                        loop: true,
+                        }}
+                    />
+                    </span>
                 </h1>
-                <p className="text-gradient text-center opacity-80 text-sm md:text-base/5 max-w-[28rem]">
-                    Estudiante universitario con 2 años de experiencia creando soluciones y productos de forma  independiente.
+                <p className="text-gradient text-center opacity-80 text-sm md:text-lg/5 max-w-[26rem]">
+                    2 años de experiencia creando soluciones y productos de forma  independiente.
                 </p>
             </div>
 
