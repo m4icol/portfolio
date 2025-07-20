@@ -17,19 +17,19 @@ export default function Home(){
             </div>
 
             <div className="w-full flex flex-col gap-7 items-center">
-                <h1 className="font-[poppins] text-gradient text-3xl inline-block md:text-5xl/13 text-center">
+                <h1 className="font-[poppins] text-gradient text-3xl inline-block md:text-5xl/14 text-center">
                     Maickol Rivera <br />
                     <span className="inline-block">
                         <Typewriter
                         options={{
-                        strings: ['Desarrollador Web', 'Diseñador UI/UX', 'Desarrollador de Software', ''],
+                        strings: ['Desarrollador Web', 'Diseñador UI/UX', 'Desarrollador de Software', 'Diseñando experiencias'],
                         autoStart: true,
                         loop: true,
                         }}
                     />
                     </span>
                 </h1>
-                <p className="text-gradient text-center opacity-80 text-sm md:text-lg/5 max-w-[26rem]">
+                <p className="text-gradient text-center opacity-80 text-sm md:text-lg/5 max-w-[20rem] md:max-w-[26rem]">
                     2 años de experiencia creando soluciones y productos de forma  independiente.
                 </p>
             </div>
