@@ -44,22 +44,23 @@ const FRONTEND = [
     },
     {
         icon: <ReactJS />,
-        text: "REACT JS"
-    },
-    {
-        icon: <ThreeJS />,
-        text: "THREE JS"
+        text: "REACT"
     },
     {
         icon: <Astro />,
         text: "ASTRO"
     },
+    {
+        icon: <ThreeJS />,
+        text: "THREE JS"
+    },
+
 ]
 
 const BACKEND = [
     {
         icon: <NodeJSIcon />,
-        text: "NODE JS"
+        text: "NODE"
     },
     {
         icon: <NestIcon />,
@@ -129,7 +130,7 @@ export default function AboutGrid(){
                                 key={index} 
                                 icon={skill.icon} 
                                 text={skill.text}
-                                span={skill.text.length > 4 ? 2 : 1}
+                                span={skill.text.length > 5 ? 2 : 1}
                             />
                         ))}
                     </div>
@@ -150,7 +151,7 @@ export default function AboutGrid(){
                                 key={index} 
                                 icon={skill.icon} 
                                 text={skill.text}
-                                span={skill.text.length > 6 ? 2 : 1}
+                                span={skill.text.length > 7 ? 2 : 1}
                             />
                         ))}
                     </div>
