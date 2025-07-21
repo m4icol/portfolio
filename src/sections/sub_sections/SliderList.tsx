@@ -103,7 +103,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
               <GitHub className="text-LIGHT-text dark:text-DARK-text" size={15}></GitHub>
             </a>
 
-            <a href={current.link} aria-label="Look at the project" target="_blank" className="opacity-90 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
+            <a href={current.link} aria-label="Look at the project" target="_blank" className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
               bg-LIGHT-selected/60 border-LIGHT-text/10
               dark:bg-DARK-selected dark:border-DARK-text/10">
             

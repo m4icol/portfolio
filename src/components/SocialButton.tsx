@@ -12,6 +12,7 @@ type SocialButtonProps = {
   target?: string;
   Options?: Options;
   label?: string;
+  className?: string;
 };
 
 export default function SocialButton({
@@ -20,15 +21,16 @@ export default function SocialButton({
   download,
   target = "",
   Options = "arrow",
-  label = "[read more...]"
+  label = "[read more...]",
+  className = ""
 }: SocialButtonProps) {
   return (
     <a
       href={href}
-      className="items-center justify-between flex gap-3 flex-row text-sm py-2.5 px-4.5
+      className={` ${className} items-center justify-between flex gap-3 flex-row text-sm py-2.5 px-4.5
        text-LIGHT-text hover:text-LIGHT-subtext 
        dark:text-DARK-subtext dark:hover:text-DARK-text 
-       border-1 border-LIGHT-subtext/20 dark:border-DARK-subtext/30 rounded-xl"
+       border-1 border-LIGHT-subtext/20 dark:border-DARK-subtext/30 rounded-xl`}
       target={target}
       rel="noopener noreferrer"
       aria-label={label}
