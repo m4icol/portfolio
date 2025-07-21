@@ -1,8 +1,9 @@
 import Arrow from "../assets/icons/Arrow";
 import Github from "../assets/icons/GitHub";
 import Link from "../assets/icons/Link";
+import Document from "../assets/icons/Document";
 
-type Options = "github" | "link" | "arrow"
+type Options = "github" | "link" | "arrow" | "document"
 
 type SocialButtonProps = {
   text: string;
@@ -24,26 +25,29 @@ export default function SocialButton({
   return (
     <a
       href={href}
-      className="rounded-full items-center justify-between flex gap-3 flex-row border text-xs py-2 pl-4 pr-2.5
-       text-LIGHT-subtext hover:text-LIGHT-text border-LIGHT-text/20 bg-LIGHT-button/40
-       dark:text-DARK-subtext dark:hover:text-DARK-text dark:border-DARK-text/20 dark:bg-DARK-button/60"
+      className="items-center justify-between flex gap-3 flex-row text-sm py-2.5 px-4.5
+       text-LIGHT-text hover:text-LIGHT-subtext 
+       dark:text-DARK-subtext dark:hover:text-DARK-text 
+       border-1 border-LIGHT-subtext/20 dark:border-DARK-subtext/30 rounded-xl"
       target={target}
       rel="noopener noreferrer"
       aria-label={label}
       {...(download ? { download } : {})}
     >
-      {text}
-      <div className="h-5 w-5 pt-0.5 flex justify-center items-center bg-LIGHT-text dark:bg-DARK-text rounded-full">
+      
         {
           Options === "arrow" ? (
-            <Arrow className="text-DARK-text dark:text-LIGHT-text" />
+            <Arrow className="dark:text-DARK-text text-LIGHT-text" />
           ) : Options === "github" ? (
-            <Github className="text-DARK-text dark:text-LIGHT-text" />
+            <Github className="dark:text-DARK-text text-LIGHT-text" />
           ) : Options === "link" ? (
-            <Link className="text-DARK-text dark:text-LIGHT-text" />
+            <Link className="dark:text-DARK-text text-LIGHT-text" />
+          ) : Options === "document" ? (
+            <Document className="dark:text-DARK-text text-LIGHT-text"/>
           ) : null
         }
-      </div>
+
+      {text}
     </a>
   );
 }

@@ -61,7 +61,7 @@ const Projects: Project[] = [
                   bg-LIGHT-selected/60 border-LIGHT-text/10
                   dark:bg-DARK-selected dark:border-DARK-text/10">
                 
-                  <Link className="text-LIGHT-text dark:border-DARK-background" size={15}></Link>
+                  <Link className="text-LIGHT-text dark:text-DARK-text" size={15}></Link>
                   <p className="text-xs text-LIGHT-text dark:text-DARK-subtext">Visitar</p>
 
                 </a>

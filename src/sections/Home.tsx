@@ -2,7 +2,6 @@ import Arrow from "../assets/icons/Arrow";
 import Line from "../assets/icons/Line";
 import SocialButton from "../components/SocialButton";
 import StarBackground from "../components/StarBackground";
-import Typewriter from 'typewriter-effect';
 
 export default function Home(){
 
@@ -16,26 +15,22 @@ export default function Home(){
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
-            <div className="w-full flex flex-col gap-7 items-center">
-                <h1 className="font-[poppins] text-gradient text-3xl inline-block md:text-5xl/14 text-center">
+            <div className=" flex flex-col items-center">
+                <h1 className="font-[poppins] text-3xl text-gradient md:text-5xl/13 text-center">
                     Maickol Rivera <br />
-                    <span className="inline-block">
-                        <Typewriter
-                        options={{
-                        strings: ['Desarrollador Web', 'Diseñador UI/UX', 'Desarrollador de Software', 'Diseñando experiencias'],
-                        autoStart: true,
-                        loop: true,
-                        }}
-                    />
-                    </span>
                 </h1>
-                <p className="text-gradient text-center opacity-80 text-sm md:text-lg/5 max-w-[20rem] md:max-w-[26rem]">
+                <h2 className=" font-[poppins] typewriter text-gradient text-3xl md:text-5xl/13 text-center">
+                    Desarrollador Web
+                </h2>
+
+
+                <p className="text-gradient text-center mt-8 opacity-80 text-sm md:text-lg/5 max-w-[20rem] md:max-w-[26rem]">
                     2 años de experiencia creando soluciones y productos de forma  independiente.
                 </p>
             </div>
 
             <div className="flex flex-col md:flex-row gap-2 md:gap-6 mt-1">
-                <SocialButton text={"DESCARGAR CV"} href="/CV_MAICKOL_RIVERA.pdf" download></SocialButton>
+                <SocialButton Options="document" text={"DESCARGAR CV"} href="/CV_MAICKOL_RIVERA.pdf" download></SocialButton>
                 <SocialButton text={"CONTACTAME"} href="/#contact"></SocialButton>
             </div>
 

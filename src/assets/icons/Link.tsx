@@ -3,7 +3,7 @@ type LinkProps ={
     className?: string;
 }
 
-export default function Link({size = 12, className = "pb-0.5"} : LinkProps){
+export default function Link({size = 16, className = "pb-0.5"} : LinkProps){
     return(
         <svg className={className}
         xmlns="http://www.w3.org/2000/svg" 
@@ -12,7 +12,7 @@ export default function Link({size = 12, className = "pb-0.5"} : LinkProps){
         viewBox="0 0 24 24" 
         fill="none" 
         stroke="currentColor"
-        stroke-width="3" 
+        stroke-width="1.5" 
         stroke-linecap="round" 
         stroke-linejoin="round">
             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71">
