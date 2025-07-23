@@ -35,7 +35,7 @@ export default function Projects(){
                         ]}
                         values={["SLIDER", "COLUMNS"]}
                     />
-                    <p className="text-sm font-semibold text-DARK-subtext hidden md:block">LISTA DE PROYECTOS</p>
+                    <p className="text-sm font-semibold text-LIGHT-subtext dark:text-DARK-subtext hidden md:block">LISTA DE PROYECTOS</p>
                 </div>
                 <button className="text-xs cursor-pointer gradient-menu rounded-lg px-4 border-1
                 text-LIGHT-subtext hover:text-LIGHT-text border-LIGHT-text/10

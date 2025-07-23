@@ -43,10 +43,10 @@ const Projects: Project[] = [
             <img
               src={img}
               alt={title}
-              className="md:absolute right-0 top-0 md:right-[-160px] md:top-[35px] md:w-[500px] object-contain w-full transition-opacity duration-300"
+              className="md:absolute right-0 top-0 md:right-[-180px] md:top-[35px] md:w-[530px] w-full"
             />
 
-            <div className="z-10 px-5 w-full md:max-w-[45%] h-full flex flex-col pb-5 md:pb-0 md:pt-3 justify-center gap-2">
+            <div className="z-10 px-5 w-full md:max-w-[45%] h-full flex flex-col pb-5 md:pb-0 justify-center gap-2">
               <p className="text-lg font-semibold text-LIGHT-text dark:text-DARK-text">{title}</p>
               <p className="text-sm/4.5 text-LIGHT-subtext dark:text-DARK-subtext">{description}</p>
               

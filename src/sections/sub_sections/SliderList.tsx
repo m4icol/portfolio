@@ -89,7 +89,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
           ))}
         </div>
 
-        <div className="w-full pt-41.5 md-pt-0 px-5 md:max-w-[45%] h-full flex flex-col pb-11 md:pb-0 md:pt-0 md:justify-center gap-2">
+        <div className="w-full pt-41.5 px-5 md:max-w-[45%] h-full flex flex-col pb-11 md:pb-0 md:pt-2 md:justify-center gap-2">
 
           <p className="text-lg font-semibold text-LIGHT-text dark:text-DARK-text">{current.title}</p>
           <p className="text-sm/4.5 text-LIGHT-subtext dark:text-DARK-subtext">{current.description}</p> 
@@ -142,20 +142,20 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
         />
       </div>
 
-        <div className="flex w-full md:w-[750px] absolute bottom-75 md:bottom-34 justify-between items-center mt-4">
+        <div className="flex w-screen px-3 md:px-0 md:w-[750px] absolute bottom-55 md:bottom-35 justify-between items-center mt-4">
           <button
             onClick={() => selectNewSlide(false)}
             className="rotate-90 transition cursor-pointer"
             aria-label="Previous slide"
           >
-            <Arrow size="18" className="opacity-50 hidden md:block hover:opacity-100" />
+            <Arrow size="18" className="opacity-50 hover:opacity-100" />
           </button>
           <button
             onClick={() => selectNewSlide(true)}
             className="rotate-270 transition cursor-pointer"
             aria-label="Next slide"
           >
-            <Arrow size="18" className="opacity-50 hidden md:block hover:opacity-100" />
+            <Arrow size="18" className="opacity-50 hover:opacity-100" />
           </button>
         </div>
     </div>
