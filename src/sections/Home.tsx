@@ -7,7 +7,7 @@ export default function Home(){
 
     return(
         <section className="px-5 relative w-screen h-full flex items-center mt-50 flex-col gap-6 pb-100">
-            <StarBackground widthBackground={50} heightBackground={50} starCount={40} topOffset={-100} />
+            <StarBackground widthBackground={50} heightBackground={50} starCount={40} topOffset={-100}/>
             
             <div className="flex flex-row items-center gap-5">
                 <Line classList="mb-0.5"></Line>
