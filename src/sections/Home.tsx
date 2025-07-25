@@ -16,22 +16,21 @@ export default function Home(){
             </div>
 
             <div className=" flex flex-col items-center">
-                <h1 className="font-[poppins] text-3xl text-gradient md:text-5xl/13 text-center">
+                <h1 className="font-[poppins] text-4xl text-gradient md:text-5xl/12 text-center">
                     Maickol Rivera <br />
                 </h1>
-                <h2 className=" font-[poppins] typewriter text-gradient text-3xl md:text-5xl/13 text-center">
+                <h2 className=" font-[poppins] typewriter text-gradient text-3xl md:text-4xl/12 text-center">
                     Desarrollador Web
                 </h2>
 
 
-                <p className="text-gradient text-center mt-8 opacity-80 text-sm md:text-lg/5 max-w-[20rem] md:max-w-[26rem]">
+                <p className="text-gradient text-center mt-5 opacity-80 text-sm md:text-lg/5 max-w-[20rem] md:max-w-[26rem]">
                     2 años de experiencia creando soluciones y productos de forma  independiente.
                 </p>
             </div>
 
             <div className="flex flex-col md:flex-row gap-2 md:gap-6 mt-1">
                 <SocialButton Options="document" text={"DESCARGAR CV"} href="/CV_MAICKOL_RIVERA.pdf" download></SocialButton>
-                <SocialButton className="hidden md:flex" text={"CONTACTAME"} href="/#contact"></SocialButton>
             </div>
 
             <a href="#projects" className="arrow absolute bottom-40" aria-label="projects section">

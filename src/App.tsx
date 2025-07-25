@@ -47,17 +47,8 @@ function App() {
   return (
     <div 
     className="w-full h-full font-[nunito] flex justify-center flex-col
-    bg-LIGHT-background  text-LIGHT-text
+    bg-LIGHT-background text-LIGHT-text
     dark:bg-DARK-background dark:text-DARK-text"
-    style={{
-      background: `
-        linear-gradient(87deg, 
-          rgba(16, 14, 19, 0.2) 0%, 
-          rgba(51, 49, 60, 0.18) 50%, 
-          rgba(19, 18, 26, 0.2) 100%
-        ),
-      `,
-    }}
     >
       <div className="w-full h-full z-10">
         <Header></Header>
@@ -70,8 +61,8 @@ function App() {
         <Contact></Contact>
       </div>
 
-      <RadialGradient size={"900"} top={"-400"} left={"0"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
-      <RadialGradient size={"900"} top={"-400"} left={"700"} gradient={"gradient-radial-2 fixed"}></RadialGradient>
+      <RadialGradient size={"1000"} top={"-350"} left={"-20"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
+      <RadialGradient size={"1000"} top={"-400"} left={"600"} gradient={"gradient-radial-2 fixed"}></RadialGradient>
 
 
       <div 

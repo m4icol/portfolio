@@ -13,7 +13,7 @@ type RadialGradientProps = {
   }: RadialGradientProps) {
     return (
       <div
-        className={` blur-4xl z-0 ${gradient}`}
+        className={`blur-4xl z-0 ${gradient}`}
         style={{
           width: `${size}px`,
           height: `${size}px`,

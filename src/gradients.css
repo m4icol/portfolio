@@ -6,7 +6,7 @@
     }
 
     .gradient-line {
-        border-bottom: 2px solid transparent;
+        border-bottom: 1px solid transparent;
         border-image: var(--gradient-line) 1;
     }
 
@@ -53,12 +53,12 @@
         );
 
         --gradient-radial-1: radial-gradient(circle, 
-            rgba(250, 155, 115, 0.09) 0%, 
+            rgba(250, 155, 115, 0.14) 0%, 
             rgba(255, 121, 121, 0) 60%
         );
 
         --gradient-radial-2: radial-gradient(circle, 
-            rgba(171, 156, 240, 0.15) 0%, 
+            rgba(171, 156, 240, 0.2) 0%, 
             rgba(171, 156, 240, 0) 60% 
         );
 
@@ -69,7 +69,7 @@
 
         --text-gradient: linear-gradient(135deg, 
             #444 0%, 
-            #888 50%, 
+            #666 50%, 
             #444 100%
         );
     }
@@ -88,12 +88,12 @@
         );
 
         --gradient-radial-1: radial-gradient(circle, 
-            rgba(250, 155, 115, 0.025) 0%, 
+            rgba(250, 155, 115, 0.02) 0%, 
             rgba(255, 121, 121, 0) 60%
         );
 
         --gradient-radial-2: radial-gradient(circle, 
-            rgba(171, 156, 240, 0.025) 0%, 
+            rgba(171, 156, 240, 0.050) 0%, 
             rgba(171, 156, 240, 0) 60% 
         );
 
