@@ -7,7 +7,7 @@ export default function Home(){
 
     return(
         <section className="px-5 relative w-screen h-full flex items-center mt-50 flex-col gap-6 pb-100">
-            <StarBackground widthBackground={50} heightBackground={50} starCount={40} topOffset={-100}/>
+            <StarBackground widthBackground={60} heightBackground={50} starCount={40} topOffset={-80}/>
             
             <div className="flex flex-row items-center gap-5">
                 <Line classList="mb-0.5"></Line>
@@ -15,7 +15,7 @@ export default function Home(){
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
-            <div className=" flex flex-col items-center">
+            <div className="flex flex-col items-center">
                 <h1 className="font-[poppins] text-4xl text-gradient md:text-5xl/12 text-center">
                     Maickol Rivera <br />
                 </h1>

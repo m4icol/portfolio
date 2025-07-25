@@ -45,7 +45,7 @@ export default function Projects(){
             </div>
 
             {typeList == "SLIDER" ? <SliderList/> : <ColumnList/>}
-            <StarBackground widthBackground={60} heightBackground={50} starCount={50} topOffset={120} />
+            <StarBackground widthBackground={60} heightBackground={50} starCount={40} topOffset={150} />
 
         </section>
     )

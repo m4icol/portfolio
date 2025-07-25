@@ -32,7 +32,7 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
           top: Math.random() * 100,
           left: Math.random() * 100,
           animationDelay: Math.random() * 3,
-          size: Math.random() * 6 + 0.5,
+          size: Math.random() * 4 + 0.5,
         });
       }
       setStars(starArray);
