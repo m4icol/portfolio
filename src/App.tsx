@@ -61,8 +61,7 @@ function App() {
         <Contact></Contact>
       </div>
 
-      <RadialGradient size={"1000"} top={"-350"} left={"-20"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
-      <RadialGradient size={"1000"} top={"-400"} left={"600"} gradient={"gradient-radial-2 fixed"}></RadialGradient>
+      <RadialGradient size={"120rem"} top={"-950"} left={"-100"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
 
 
       <div 
@@ -78,7 +77,7 @@ function App() {
           values={["light", "dark"]}
         />
 
-        <SwitchOption
+        {/* <SwitchOption
           selectedValue={language}
           setSelectedValue={setLanguage}
           options={[
@@ -86,7 +85,7 @@ function App() {
             <p>SPN</p>,
           ]}
           values={["ENG", "SPN"]}
-        />
+        /> */}
       </div>
       
     </div>
