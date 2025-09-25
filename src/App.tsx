@@ -30,8 +30,8 @@ function App() {
   }, [])
 
   
-  type Language = "ENG" | "SPN";
-  const [language, setLanguage] = useState<Language>("SPN");
+  // type Language = "ENG" | "SPN";
+  // const [language, setLanguage] = useState<Language>("SPN");
 
   const [isScrolled, setIsScrolled] = useState(false);
 
