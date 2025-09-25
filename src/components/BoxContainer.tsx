@@ -18,10 +18,10 @@ export function BoxContainer({ children, title, className }: BoxContainerProps) 
 
 export function SmallBox({ children, title, className }: BoxContainerProps) {
   return (
-    <div className={`${className} flex-col py-8 h-full border-1 overflow-hidden rounded-xl flex justify-center items-center
+    <div className={`${className} flex-col py-7 h-full border-1 overflow-hidden rounded-xl flex justify-center items-center
     border-LIGHT-subtext/20 bg-LIGHT-selected/20
     dark:border-DARK-subtext/20 dark:bg-DARK-selected/40`}>
-      <p className="font-[poppins] text-4xl text-center text-gradient">{title}</p>
+      <p className="font-[poppins] text-4xl text-center text-gradient mb-1">{title}</p>
       {children}
     </div>
   );

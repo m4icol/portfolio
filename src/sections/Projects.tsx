@@ -37,11 +37,11 @@ export default function Projects(){
                     />
                     <p className="text-sm font-semibold text-LIGHT-subtext dark:text-DARK-subtext hidden md:block">LISTA DE PROYECTOS</p>
                 </div>
-                <button className="text-xs cursor-pointer gradient-menu rounded-lg px-4 border-1
+                {/* <button className="text-xs cursor-pointer gradient-menu rounded-lg px-4 border-1
                 text-LIGHT-subtext hover:text-LIGHT-text border-LIGHT-text/10
                 dark:text-DARK-subtext dark:hover:text-DARK-text dark:border-DARK-text/10">
                     VER TODOS +
-                </button>
+                </button> */}
             </div>
 
             {typeList == "SLIDER" ? <SliderList/> : <ColumnList/>}

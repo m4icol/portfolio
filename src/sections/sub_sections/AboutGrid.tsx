@@ -192,7 +192,7 @@ export default function AboutGrid(){
                 <SmallBox className="
                 row-start-7
                 md:col-start-4 md:row-start-3" 
-                title="2">
+                title="3">
                     <p className="w-27 text-LIGHT-subtext dark:text-DARK-subtext">
                         Contribuciones</p>
                 </SmallBox>
@@ -201,11 +201,18 @@ export default function AboutGrid(){
                     col-span-2 row-start-8
                     md:col-start-4 md:row-start-4 mr-3.5
                     ">
-                    <SmallBox className=""
+                    <SmallBox className="
+                row-start-7
+                md:col-start-4 md:row-start-3" 
+                title="2">
+                    <p className="w-36 text-LIGHT-subtext dark:text-DARK-subtext">
+                        Años Desarrollando</p>
+                </SmallBox>
+                    {/* <SmallBox className=""
                     title="+">
                         <p className="text-center text-sm text-gradient">
                             VER MAS</p>
-                    </SmallBox>
+                    </SmallBox> */}
 
                     <RadialGradient
                         size="300"
